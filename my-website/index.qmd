@@ -4,10 +4,6 @@ title: "Poppy J. Hesketh-Best, Ph.D"
 
 **phesketh@igtp.cat** || [<span class="purple-link">Personal GitHub</span>](https://github.com/pjhesbest) || [<span class="purple-link">Institutional GitHub</span>](https://github.com/phesketh-igtp) || [<span class="gold-link">ORCID</span>](https://orcid.org/0000-0002-0284-6689)
 
-<span class="keyword-box">Nextflow</span>
-<span class="keyword-box">R</span>
-<span class="keyword-box">Shell</span>
-<span class="keyword-box">GitHub Pages</span>
 <span class="keyword-box">Microbiology</span>
 <span class="keyword-box">Genomics</span>
 <span class="keyword-box">Metagenomics</span>
@@ -35,6 +31,29 @@ I'm a microbiologist and bioinformatician with experience in microbial ecology a
 🌱 Current project: A Nextflow workflow for epidemiological outbreak analysis of Mycobacterium tuberculosis
 
 🔭 Broadly working on: SARS-CoV-2 and Mycobacterium tuberculosis surveilance, rapid diagnostics with Oxford Nanopore sequencing
+
+## Technical Languages
+
+<div class="skill-bar">
+  <div class="skill-fill r">R - 100%</div>
+</div>
+
+<div class="skill-bar">
+  <div class="skill-fill shell">Shell - 100%</div>
+</div>
+
+<div class="skill-bar">
+  <div class="skill-fill shell">Nextflow - 100%</div>
+</div>
+
+<div class="skill-bar">
+  <div class="skill-fill quarto">Quarto - 70%</div>
+</div>
+
+<div class="skill-bar">
+  <div class="skill-fill python">Python - 40%</div>
+</div>
+
 
 🌍 Languages: BASH, R, Nextflow, Python
 

@@ -32,3 +32,29 @@
 .gold-link:hover {
     color: #e6b800; /* Darker golden yellow on hover */
 }
+
+.skill-bar {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    width: 100%;
+    height: 20px;
+    position: relative;
+    margin: 8px 0;
+}
+
+.skill-fill {
+    height: 100%;
+    border-radius: 8px;
+    text-align: right;
+    padding-right: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    line-height: 20px;
+}
+
+/* Different Colors for Each Skill */
+.python { background-color: #3776ab; width: 90%; }  /* Python: 90% confidence */
+.r { background-color: #276dc2; width: 80%; }       /* R: 80% confidence */
+.quarto { background-color: #f1a340; width: 70%; }  /* Quarto: 70% confidence */
+.shell { background-color: #4caf50; width: 60%; }   /* Shell: 60% confidence */
