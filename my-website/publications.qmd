@@ -1,7 +1,13 @@
 ---
 title: "Publications"
-format: html
-css: styles.css  # Or include styles directly within the <style> tag in the document
+listing:
+  - id: articles-list
+    contents: articles/20*.qmd
+    template: publications.ejs
+    [...]
+  - id: conferences-list
+    contents: conferences/20*.qmd
+    template: publications.ejs
 ---
 
 **117.7** Research Interest Score || **45** Citations || **4** h-index
