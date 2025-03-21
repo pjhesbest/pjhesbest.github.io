@@ -7,14 +7,27 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - projects.qmd
-      - publications.qmd
-      - SciComms.qmd
-      #- CV.qmd
+      - href: projects.qmd
+        text: Projects
+      - href: publications.qmd
+        text: Publications
+      - href: SciComms.qmd
+        text: SciComms
+      - href: https://github.com/pjhesbest
+        text: GitHub
+      - href: https://twitter.com/pjhesbest
+        text: Twitter
+      - href: https://bsky.app/profile/pjhesbest
+        text: BlueSky
+  favicon: "logo.png"
+  twitter-card: true
+  site-url: "https://example.com"
+
 
 format:
   html:
     theme:
-      - solarized
+      light: flatly
+      dark: darkly
     css: styles.css
     toc: true

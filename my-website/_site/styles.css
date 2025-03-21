@@ -2,10 +2,10 @@
 
 .keyword-box {
     display: inline-block;
-    border: 2px solid #729cc0;  /* Blue border */
-    background-color: #fce5cd;  /* Light blue background */
-    color: #171414;  /* Blue text */
-    padding: 4px 6px;
+    border: 2px solid #2d2c2e;  /* Blue border */
+    background-color: #dfdfe4;  /* Light blue background */
+    color: #1e1a27;  /* Blue text */
+    padding: 2px 4px;
     border-radius: 8px;
     font-size: 1em;
     font-weight: bold;
@@ -69,9 +69,73 @@
 }
 
 /* Different Colors for Each Skill */
+.html { background-color: #1e1229; width: 30%; }
 .markdown { background-color: #231c35; width: 98%; }
 .nextflow { background-color: #242039; width: 90%; }
 .python { background-color: #2a2b47; width: 50%; }
 .quarto { background-color: #484564; width: 70%; }
 .r { background-color: #5b5271; width: 95%; }
 .shell { background-color: #6e5774; width: 95%; }
+
+
+
+
+/* Style for the content box */
+.content-box {
+    background-color: #f9f9f9; /* Light background */
+    padding: 20px; /* Add padding inside the box */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Add some space below the box */
+}
+
+/* Optional: Style the skill bars inside the box if needed */
+.skill-bar {
+    margin-bottom: 10px; /* Space between skill bars */
+}
+
+/*
+    FLEXIBLE IMAGE LAYOUT FOR PUBLICATION PAGE
+*/
+
+.publications {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Space between publications */
+  }
+  
+  .publication {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px solid #ddd; /* Optional, adds a line between each publication */
+    padding-bottom: 20px; /* Space between content and the border */
+  }
+  
+  .pub-text {
+    flex: 1; /* Takes up the remaining space */
+  }
+  
+  .pub-title {
+    font-size: 1.5em; /* Title font size */
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .pub-authors {
+    font-size: 0.9em; /* Smaller text size for authors */
+    color: #555; /* Lighter color for authors */
+  }
+  
+  .pub-image {
+    width: 40%; /* Takes up 40% of the width */
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .pub-image img {
+    width: 100%; /* Ensures image fits within the allocated space */
+    object-fit: cover; /* Prevents distortion of the image */
+  }
+  

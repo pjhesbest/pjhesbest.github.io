@@ -1,24 +1,20 @@
 ---
 title: "Publications"
+format: html
+css: styles.css  # Or include styles directly within the <style> tag in the document
 ---
 
-**117.7** Research Interest Score **||** **45** Citations **||** **4** h-index
+**117.7** Research Interest Score || **45** Citations || **4** h-index
 
 ***
 
-## In preparation
-
-## Under review/revisions
-
-[12] Chrismas N.A., et al. (*in review*) "Evolutionary and biological mechanisms underpinning chitin degradation in aquatic fungi" *Comms. Bio.*
-
-[11] McKeown, D., et al. (*in review*) “Virome compositions indicate that viral spillover is a dead-end between the western honey bee and the common eastern bumblebee” *Comms. Bio.*
-
-## Published
-
 ### 2024
 
-[10] **Hesketh-Best P.J.**, et al., Schroeder D.C. (2024) “Nationwide survey of honey bee viruses in the United States of America reveals shifts in dominant Deformed wing virus variants”. *Comms. Bio.* doi: https://doi.org/10.1038/s42003-024-07333-9 
+## Publications
+
+[10] **Hesketh-Best P.J.**, et al., Schroeder D.C. (2024) “Nationwide survey of honey bee viruses in the United States of America reveals shifts in dominant Deformed wing virus variants”. *Comms. Bio.* doi: https://doi.org/10.1038/s42003-024-07333-9
+
+#### 
 
 [9] **Hesketh-Best P.J**, et al., Schroeder D.C. (2024) “Sacbrood viruses and select Lake Sinai virus variants dominated *Apis mellifera* colonies symptomatic for European foulbrood”. *Microbiol. Spectr. ASM* doi: https://doi.org/10.1128/spectrum.00656-24
 

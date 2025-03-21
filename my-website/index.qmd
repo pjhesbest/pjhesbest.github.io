@@ -7,6 +7,7 @@ title: "Poppy J. Hesketh-Best, Ph.D"
 <span class="keyword-box">Microbiology</span>
 <span class="keyword-box">Genomics</span>
 <span class="keyword-box">Metagenomics</span>
+<span class="keyword-box">Viromes</span>
 <span class="keyword-box">Microbial ecology</span>
 <span class="keyword-box">Infectious diseases</span>
 
@@ -17,16 +18,7 @@ title: "Poppy J. Hesketh-Best, Ph.D"
 I'm a microbiologist and bioinformatician with experience in microbial ecology and infectious diseases. I enjoy building analysis workflows that are accesible to people with no coding background, and making resources for collagues to learn how to code! I’ve worked as a Postdoctoral Research Associate on diverse projects (in the USA and UK), investigating bacterial and viral ecology (both DNA and RNA viruses) in the marine environment and agricultural systems. Currently, I work as a bioinformatician and investigator, where I focus on developing code and analyzing data for pathogen surveillance and diagnostics.
 
 ***
-
-- BSc Microbiology and Biotechnology, University of Sheffield, UK
-- MRes Marine Biology, University of Plymouth, UK
-- PhD Microbiology, University of Plymouth, UK
-
-***
-
 💻 **Employment:** Bioinformatician and Investigator in the Diagnosis and Genomic Epidemiology of Pathogens (DxEpiPath) group, IGTP 🇪🇸
-
-🌱 **Current project:** A Nextflow workflow for epidemiological outbreak analysis of Mycobacterium tuberculosis
 
 🔭 **Broadly working on:** SARS-CoV-2 and Mycobacterium tuberculosis surveilance, rapid diagnostics with Oxford Nanopore sequencing
 
@@ -55,8 +47,11 @@ I'm a microbiologist and bioinformatician with experience in microbial ecology a
   <div class="skill-fill shell">Shell/BASH</div>
 </div>
 
+💻 **Education:**
 
-
+- PhD Microbiology, University of Plymouth, UK
+- MRes Marine Biology, University of Plymouth, UK
+- BSc Microbiology and Biotechnology, University of Sheffield, UK
 
 ***
 
