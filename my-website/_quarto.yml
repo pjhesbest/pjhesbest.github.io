@@ -23,7 +23,6 @@ website:
   twitter-card: true
   site-url: "https://example.com"
 
-
 format:
   html:
     theme:
