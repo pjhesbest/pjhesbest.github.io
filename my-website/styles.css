@@ -33,6 +33,16 @@
     color: #e6b800; /* Darker golden yellow on hover */
 }
 
+/* SIDEBAR: CODING SKILLS */
+
+/* Make the skill bar container 50% width, center it horizontally, and add indentation */
+.skill-container {
+    width: 50%; /* Set the width to 50% */
+    margin: 0 auto; /* Center it horizontally */
+    padding-left: 20px; /* Add indentation to the left */
+}
+
+/* Style the skill bars */
 .skill-bar {
     background-color: #e0e0e0;
     border-radius: 8px;
@@ -40,6 +50,7 @@
     height: 20px;
     position: relative;
     margin: 8px 0;
+    overflow: hidden;
 }
 
 .skill-fill {
@@ -51,10 +62,16 @@
     font-weight: bold;
     color: white;
     line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 10px;
 }
 
 /* Different Colors for Each Skill */
-.python { background-color: #3776ab; width: 90%; }  /* Python: 90% confidence */
-.r { background-color: #276dc2; width: 80%; }       /* R: 80% confidence */
-.quarto { background-color: #f1a340; width: 70%; }  /* Quarto: 70% confidence */
-.shell { background-color: #4caf50; width: 60%; }   /* Shell: 60% confidence */
+.markdown { background-color: #231c35; width: 98%; }
+.nextflow { background-color: #242039; width: 90%; }
+.python { background-color: #2a2b47; width: 50%; }
+.quarto { background-color: #484564; width: 70%; }
+.r { background-color: #5b5271; width: 95%; }
+.shell { background-color: #6e5774; width: 95%; }

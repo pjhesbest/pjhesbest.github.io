@@ -32,7 +32,7 @@
     "href": "index.html#about-me",
     "title": "Poppy J. Hesketh-Best, Ph.D",
     "section": "About me",
-    "text": "About me\nI’m a microbiologist and bioinformatician with experience in microbial ecology and infectious diseases. I enjoy building analysis workflows that are accesible to people with no coding background, and making resources for collagues to learn how to code! I’ve worked as a Postdoctoral Research Associate on diverse projects (in the USA and UK), investigating bacterial and viral ecology (both DNA and RNA viruses) in the marine environment and agricultural systems. Currently, I work as a bioinformatician and investigator, where I focus on developing code and analyzing data for pathogen surveillance and diagnostics.\n\n\nBSc Microbiology and Biotechnology, University of Sheffield, UK\nMRes Marine Biology, University of Plymouth, UK\nPhD Microbiology, University of Plymouth, UK"
+    "text": "About me\nI’m a microbiologist and bioinformatician with experience in microbial ecology and infectious diseases. I enjoy building analysis workflows that are accesible to people with no coding background, and making resources for collagues to learn how to code! I’ve worked as a Postdoctoral Research Associate on diverse projects (in the USA and UK), investigating bacterial and viral ecology (both DNA and RNA viruses) in the marine environment and agricultural systems. Currently, I work as a bioinformatician and investigator, where I focus on developing code and analyzing data for pathogen surveillance and diagnostics.\n\n\nBSc Microbiology and Biotechnology, University of Sheffield, UK\nMRes Marine Biology, University of Plymouth, UK\nPhD Microbiology, University of Plymouth, UK\n\n\n💻 Employment: Bioinformatician and Investigator in the Diagnosis and Genomic Epidemiology of Pathogens (DxEpiPath) group, IGTP 🇪🇸\n🌱 Current project: A Nextflow workflow for epidemiological outbreak analysis of Mycobacterium tuberculosis\n🔭 Broadly working on: SARS-CoV-2 and Mycobacterium tuberculosis surveilance, rapid diagnostics with Oxford Nanopore sequencing\n🌍 Programming languages:\n\n\nMarkdown\n\n\n\n\nNextflow\n\n\n\n\nPython\n\n\n\n\nQuarto\n\n\n\n\nR/RStudio\n\n\n\n\nShell/BASH"
   },
   {
     "objectID": "index.html#currently",
@@ -116,6 +116,6 @@
     "href": "index.html#technical-languages",
     "title": "Poppy J. Hesketh-Best, Ph.D",
     "section": "Technical Languages",
-    "text": "Technical Languages\n\n\nR - 100%\n\n\n\n\nShell - 100%\n\n\n\n\nNextflow - 100%\n\n\n\n\nQuarto - 70%\n\n\n\n\nPython - 40%\n\n\n🌍 Languages: BASH, R, Nextflow, Python"
+    "text": "Technical Languages\n\n\nMarkdown\n\n\n\n\nNextflow\n\n\n\n\nPython\n\n\n\n\nQuarto\n\n\n\n\nR/RStudio\n\n\n\n\nShell/BASH"
   }
 ]

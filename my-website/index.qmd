@@ -24,38 +24,37 @@ I'm a microbiologist and bioinformatician with experience in microbial ecology a
 
 ***
 
-## Currently
+💻 **Employment:** Bioinformatician and Investigator in the Diagnosis and Genomic Epidemiology of Pathogens (DxEpiPath) group, IGTP 🇪🇸
 
-💻 Employment: Bioinformatician and Investigator in the Diagnosis and Genomic Epidemiology of Pathogens (DxEpiPath) group, IGTP 🇪🇸
+🌱 **Current project:** A Nextflow workflow for epidemiological outbreak analysis of Mycobacterium tuberculosis
 
-🌱 Current project: A Nextflow workflow for epidemiological outbreak analysis of Mycobacterium tuberculosis
+🔭 **Broadly working on:** SARS-CoV-2 and Mycobacterium tuberculosis surveilance, rapid diagnostics with Oxford Nanopore sequencing
 
-🔭 Broadly working on: SARS-CoV-2 and Mycobacterium tuberculosis surveilance, rapid diagnostics with Oxford Nanopore sequencing
-
-## Technical Languages
-
+🌍 **Programming languages:**
 <div class="skill-bar">
-  <div class="skill-fill r">R - 100%</div>
+  <div class="skill-fill markdown">Markdown</div>
 </div>
 
 <div class="skill-bar">
-  <div class="skill-fill shell">Shell - 100%</div>
+  <div class="skill-fill nextflow">Nextflow</div>
 </div>
 
 <div class="skill-bar">
-  <div class="skill-fill shell">Nextflow - 100%</div>
+  <div class="skill-fill python">Python</div>
 </div>
 
 <div class="skill-bar">
-  <div class="skill-fill quarto">Quarto - 70%</div>
+  <div class="skill-fill quarto">Quarto</div>
 </div>
 
 <div class="skill-bar">
-  <div class="skill-fill python">Python - 40%</div>
+  <div class="skill-fill r">R/RStudio</div>
 </div>
 
+<div class="skill-bar">
+  <div class="skill-fill shell">Shell/BASH</div>
+</div>
 
-🌍 Languages: BASH, R, Nextflow, Python
 
 
 
