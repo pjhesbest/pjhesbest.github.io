@@ -2,20 +2,19 @@ project:
   type: website
 
 website:
-  title: "my-website"
+  title: "Poppy J Hesketh Best, Ph.D"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - projects.qmd
+      - publications.qmd
+      - SciComms.qmd
+      #- CV.qmd
 
 format:
   html:
     theme:
-      - cosmo
-      - brand
+      - solarized
     css: styles.css
     toc: true
-
-
-

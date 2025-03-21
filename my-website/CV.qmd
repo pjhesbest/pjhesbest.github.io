@@ -1,0 +1,100 @@
+---
+title: "My CV"
+---
+
+# Professional Appointments
+
+## Postdoctoral Research Associate
+**Jan 2023 – Aug 2024                         University of Minnesota, USA**
+
+Principle project is investigating the genomics of honey-bee viruses (RNA single-stranded viruses) funded by US-ISRAEL Binational Agricultural Research and Development Fund. Developing an in-house automated bioinformatics pipeline for the analysis of agriculturally relevant RNA viruses sequenced using oxford nanopore technology.
+University of Miami, USA
+
+## Postdoctoral Research Associate
+**April 2022 – Dec 2022                         University of Miami, USA**
+Primary research projects as part of the Viral Ecology Research lab included investigating the viral ecology of phototrophic anaerobic bacteriophages of anoxic lakes. This project has produced a publication and supported a successful grant application to NASA. As part of this project, I conducted the preliminary data analysis, wrote a publication to support the grant proposal and reviewed the proposal itself. My second project involves understanding horizontal gene exchange between metagenomic bacterial genomes, plasmids and bacteriophages using Hi-C and Illumina data. Additional responsibilities included the mentoring and support of three PhD students within the research group and overseeing the ordering and maintenance of lab supplies
+
+## Postdoctoral Research Assistant
+Aug 2021 – March 2022                           
+British Antarctic Survey, UK
+Postdoctoral Research Assistant, Aug 2021 – March 2022
+Funded by a small NERC grant, this project aimed to benchmark the Oxford Nanopore VolTRAX2 as a means of rapid sequencing of Antarctic invertebrate metagenomes. This project involved sequencing metagenomes and 16S rRNA amplicon surveys of invertebrate microbial consortiums in order to predict for specialised metabolites with medical and biotechnological applications. PIs – Prof. Melody Clark and Prof. Mathew Upton
+
+TECHNICAL ABILITIES
+Computational/Software: 16S rRNA amplicon surveys; whole-genome, bacterial and viral metagenomics (Nanopore, Illumina, Hi-C), and metatranscriptomics for RNA viral metagenomics. Proficient with programming languages (R and UNIX/BASH - script writing and implementing workflows), graphical visualisation and statistical analysis with R, and working in high-performance computing environments (SLURM, PEGASUS). Intermediate script writing and implementation in Python.
+Cell Culture and Microbiology: Cell culture and assays, culturing environmental microbes, high-throughput antibiotic production screening, biofilm assays, and flow cytometry.
+Molecular Biology and Genomics: PCR, gel electrophoresis, DNA/RNA extraction and amplification, cDNA synthesis, DNA library construction for Nanopore sequencing (both manually and with the VolTRAX2 device).
+Insect in vivo model handling: Galleria mellonella (wax moth) larvae, antibiotic efficacy and toxicity testing by intracellular and burn infections.
+
+EDUCATION
+2021 - Ph.D Marine Biology                                                    University of Plymouth, Plymouth, UK
+2017 - M.Res Marine Biology                                                  University of Plymouth, Plymouth, UK
+2016 - B.Sc Microbiology and Biochemistry                     The University of Sheffield, Sheffield, UK
+GRANTS
+Successful:
+University of Minnesota PostDoctoral Association Career Development Award - $1,000 (Nov 2023)
+British Ecological Society Student Travel Grant - £500 (July 2019)
+14th Deep-Sea Biology Symposium Travel Grant - £750 (Aug 2018)
+Unsuccessful:
+Environmental Protection Agency (EPA), Miami USA – Coral Reef Health for $250,000 (Co-PI, Jan 2023)
+
+TEACHING AND MENTORING
+Current Co-director of studies:
+Iglesias,. M., PhD candidate at the Universitat Autònoma de Barcelona (2025-)
+Current mentees:
+Stiffler A., PhD candidate at the University of Miami (2022-)
+Wallace B., PhD candidate at the University of Miami (2022-)
+Past mentees:
+Varona N., PhD candidate at the University of Miami (2022-2025)
+Other:
+Guest lecturer in General Biology and Microbiology modules at the University of Miami, USA. Mentoring and teaching PhD and undergraduate students general bioinformatics and laboratory skills, including sequencing library preparation and cell culture (2022).
+SERVICE
+Journal Reviewer
+2024-present: Microbiology Society Journal (1 review)
+Internal Grant Reviewer
+Internal travel grant reviewer for the PostDoctoral Research Association at the University of Minnesota (2024)
+Outreach
+Specialist presenter at the ‘Messages from the Bees’ event organised by the University of Minnesota Bee Lab, communicating the strategies of pathogen monitoring in honey bees.
+Invited remote guest speaker on STEM higher education and research, to International Baccalaureate (17-19 years old) students at Hiram Bingham School, Lima, Peru (Sept 2022) and British International School Ho Chi Minh City, Vietnam (Nov 2022). 
+INVITATIONS, CONFERENCE AND WORKSHOP ATTENDANCE
+Invited talks
+GEOMAR Marine Symbiosis Research Unit, Kiel, Germany: “Host-microbe-virus symbiosis and infections shape ecosystems” (Mar 2024)
+Anglia Ruskin University, Cambridge, UK: “Utilising MinION sequencing for antibiotic discovery from marine invertebrates” (Jan 2022)
+Attendance
+1st Antibiotic Discovery Accelerator Network meeting – Penryn, Cornwall, UK (June 2019)
+Oral presentations
+American Bee Research Conference – New Orleans, USA (Jan 2024)
+15th Marine Biological Association Postgraduate Conference - Plymouth UK (May 2018)
+Conference Session Chair / Organising committee
+Online 2nd Antibiotic Discovery Accelerator Network meeting - Session chair (Dec 2020)
+Plymouth Marine Science and Education Foundation's (PlyMSEF) annual student conference - Session chair and conference organising committee (Feb 2018)
+Workshop attendance
+Nextflow training, Seqera, Barcelona (Nov 2025)
+Introduction to Nextflow, Cloud Infrastructure of Microbial Bioinformatics (Jan 2022)
+Online Metagenomics: from Kraken to R workshop, Cloud Infrastructure of Microbial Bioinformatics (June 2021)
+Online NGS data analysis workshop, Rhodes University, South Africa (March 2021)
+Anvi’o metagenomics workshop, University of Exeter, Penryn, UK (June 2018)
+
+RESEARCH PROJECTS AND CONTRACTS
+Current involvement:
+Project: TB-SEQ: a new genomic epidemiology strategy to complement the study of tuberculosis contacts in Catalonia (2024-2026).
+Project: Brand-specific COVID-19 vaccine effectiveness against severe COVID-19 disease in Europe - A contribution of id.DRIVE, a public-private partnership to estimate brand-specific COVID-19 vaccine effectiveness in Europe (id.Drive) (2024-2025)
+Project: Consolidation of WGS and RT-PCR activities for SARS-CoV-2 in Spain towards sustainable use and integration of enhanced infrastructure and processes in the RELECOV network (Relecs 2.0) (2024-2025)
+Project: Brand-specific COVID-19 vaccine effectiveness against severe COVID-19 disease in Europe (COVIDRIVE) (2024-2025)
+Past involvement:
+Project: Does Honey Bee Hygienic Behavior Curtail or Enhance Virus Transmission, University of Minnesota (2022-2024).
+PUBLICATIONS
+In preparation
+Under review/revisions
+[11] McKeown, D., et al. (in review) “Virome compositions indicate that viral spillover is a dead-end between the western honey bee and the common eastern bumblebee” Communications Biology
+Published/Accepted for publication
+[10] Hesketh-Best P.J, et al., Schroeder D.C. (2024) “Nationwide survey of honey bee viruses in the United States of America reveals shifts in dominant Deformed wing virus variants”. Communications Biology doi: https://doi.org/10.1038/s42003-024-07333-9 
+[9] Hesketh-Best P.J, et al., Schroeder D.C. (2024) “Sacbrood viruses and select Lake Sinai virus variants dominated Apis mellifera colonies symptomatic for European foulbrood”. Microbiol. Spectr. ASM doi: https://doi.org/10.1128/spectrum.00656-24
+[8] Wallace B., et al., Hesketh-Best P.J, Silveira C.B. (2024) “Globally distributed bacteriophage genomes reveal mechanisms of tripartite phage-bacteria-coral interactions” ISME J. doi: https://doi.org/10.1093/ismejo/wrae132
+[7] Stiffler A., Hesketh-Best P.J., et al., Silveira C.B. (2024) “Genomic and induction evidence for bacteriophage contributions to sargassum-bacteria symbioses” BMC Microbiome doi: https://doi.org/10.1186/s40168-024-01860-7 
+[6] Varona N.S, Hesketh-Best P.J. et al., Silveira C.B. (2024) ‘Host-specific viral predation network on coral reefs’ ISME Journal doi: https://doi.org/10.1093/ismejo/wrae240
+[5] Nikulin S.L., Hesketh-Best P.J. et al., Schroeder C.D. (2024) ‘A semi-automated and high-throughput approach for the detection of honey bee viruses in bee samples’. PLoS ONE doi: https://doi.org/10.1371/journal.pone.0297623 
+[4] Hesketh-Best P.J., et al., Silveira C.B. (2023) ‘Viruses of sulfur oxidizing phototrophs encode genes for pigment, carbon, and sulfur metabolisms’. Communications Earth & Enviroment doi: https://doi.org/10.1038/s43247-023-00796-4
+[3] Hesketh-Best P.J, et al., Upton M. (2023) ‘Whole genomes of deep-sea sponge-associated bacteria exhibit high novel natural product potential’. FEMS Microbe doi: https://doi.org/10.1093/femsmc/xtad005 
+[2] Koch M.J., Hesketh-Best P.J., et al., Upton M. (2021) ‘Impact of growth media and pressure on the diversity and antimicrobial activity of isolates from two species of Hexactinellid Sponge’. Microbiology Journal doi: https://doi.org/10.1099/mic.0.001123
+[1] Hesketh-Best P.J., Mouritzen M.V., et al., Upton M. (2021) ‘Galleria mellonella exhibit a weight-dependent lethal median dose against Methicillin-resistant Staphylococcus aureus’. Pathogens and Disease (FEMS). doi: https://doi.org/10.1093/femspd/ftab003a

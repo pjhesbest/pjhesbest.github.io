@@ -1,1 +1,34 @@
 /* css styles */
+
+.keyword-box {
+    display: inline-block;
+    border: 2px solid #729cc0;  /* Blue border */
+    background-color: #fce5cd;  /* Light blue background */
+    color: #171414;  /* Blue text */
+    padding: 4px 6px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.purple-link {
+    color: #6e40c9; /* GitHub purple */
+    font-weight: bold;
+    text-decoration: none; /* Optional: Remove underline */
+}
+
+.purple-link:hover {
+    color: #9b59b6; /* Lighter purple on hover */
+}
+
+.gold-link {
+    color: #ffcc00; /* Golden yellow */
+    font-weight: bold;
+    text-decoration: none; /* Optional: Remove underline */
+}
+
+.gold-link:hover {
+    color: #e6b800; /* Darker golden yellow on hover */
+}

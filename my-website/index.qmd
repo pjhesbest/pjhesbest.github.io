@@ -1,7 +1,45 @@
 ---
-title: "my-website"
+title: "Poppy J. Hesketh-Best, Ph.D"
 ---
 
-This is a Quarto website.
+**phesketh@igtp.cat** || [<span class="purple-link">Personal GitHub</span>](https://github.com/pjhesbest) || [<span class="purple-link">Institutional GitHub</span>](https://github.com/phesketh-igtp) || [<span class="gold-link">ORCID</span>](https://orcid.org/0000-0002-0284-6689)
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+<span class="keyword-box">Nextflow</span>
+<span class="keyword-box">R</span>
+<span class="keyword-box">Shell</span>
+<span class="keyword-box">GitHub Pages</span>
+<span class="keyword-box">Microbiology</span>
+<span class="keyword-box">Genomics</span>
+<span class="keyword-box">Metagenomics</span>
+<span class="keyword-box">Microbial ecology</span>
+<span class="keyword-box">Infectious diseases</span>
+
+***
+
+## About me
+
+I'm a microbiologist and bioinformatician with experience in microbial ecology and infectious diseases. I enjoy building analysis workflows that are accesible to people with no coding background, and making resources for collagues to learn how to code! I’ve worked as a Postdoctoral Research Associate on diverse projects (in the USA and UK), investigating bacterial and viral ecology (both DNA and RNA viruses) in the marine environment and agricultural systems. Currently, I work as a bioinformatician and investigator, where I focus on developing code and analyzing data for pathogen surveillance and diagnostics.
+
+***
+
+- BSc Microbiology and Biotechnology, University of Sheffield, UK
+- MRes Marine Biology, University of Plymouth, UK
+- PhD Microbiology, University of Plymouth, UK
+
+***
+
+## Currently
+
+💻 Employment: Bioinformatician and Investigator in the Diagnosis and Genomic Epidemiology of Pathogens (DxEpiPath) group, IGTP 🇪🇸
+
+🌱 Current project: A Nextflow workflow for epidemiological outbreak analysis of Mycobacterium tuberculosis
+
+🔭 Broadly working on: SARS-CoV-2 and Mycobacterium tuberculosis surveilance, rapid diagnostics with Oxford Nanopore sequencing
+
+🌍 Languages: BASH, R, Nextflow, Python
+
+
+
+***
+
+
