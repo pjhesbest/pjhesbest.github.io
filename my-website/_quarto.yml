@@ -11,8 +11,8 @@ website:
         text: Projects
       - href: publications.qmd
         text: Publications
-      - href: SciComms.qmd
-        text: SciComms
+#      - href: SciComms.qmd
+#        text: SciComms
       - href: https://github.com/pjhesbest
         text: GitHub
       - href: https://bsky.app/profile/pjhesbes.bsky.social

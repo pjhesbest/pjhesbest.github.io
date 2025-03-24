@@ -7,7 +7,7 @@
     color: #1e1a27;  /* Blue text */
     padding: 2px 4px;
     border-radius: 8px;
-    font-size: 1em;
+    font-size: 0.7em;
     font-weight: bold;
     margin: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
@@ -94,48 +94,3 @@
 .skill-bar {
     margin-bottom: 10px; /* Space between skill bars */
 }
-
-/*
-    FLEXIBLE IMAGE LAYOUT FOR PUBLICATION PAGE
-*/
-
-.publications {
-    display: flex;
-    flex-direction: column;
-    gap: 30px; /* Space between publications */
-  }
-  
-  .publication {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    border-bottom: 1px solid #ddd; /* Optional, adds a line between each publication */
-    padding-bottom: 20px; /* Space between content and the border */
-  }
-  
-  .pub-text {
-    flex: 1; /* Takes up the remaining space */
-  }
-  
-  .pub-title {
-    font-size: 1.5em; /* Title font size */
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .pub-authors {
-    font-size: 0.9em; /* Smaller text size for authors */
-    color: #555; /* Lighter color for authors */
-  }
-  
-  .pub-image {
-    width: 40%; /* Takes up 40% of the width */
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .pub-image img {
-    width: 100%; /* Ensures image fits within the allocated space */
-    object-fit: cover; /* Prevents distortion of the image */
-  }
-  

@@ -9,6 +9,10 @@ Population-based genomic epidemiology study for tailored strategies for surveill
 
 **Role(s):** Bioinformatics developer and Data Analysis
 
+<span class="keyword-box">Molecular Epidemiology</span>
+<span class="keyword-box">Mycobacterium tuberculosis</span>
+<span class="keyword-box">Whole-genome sequencing</span>
+
 ## Enterobiome
 Intestinal bacterial microbiota and invasive enterococcal disease: a prospective case-control study and evaluation of its prophylaxis by probiotic administration in animal models.
 
