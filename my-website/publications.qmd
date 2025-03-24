@@ -1,45 +1,39 @@
 ---
 title: "Publications"
-listing:
-  - id: articles-list
-    contents: articles/20*.qmd
-    template: publications.ejs
-    [...]
-  - id: conferences-list
-    contents: conferences/20*.qmd
-    template: publications.ejs
 ---
 
-**117.7** Research Interest Score || **45** Citations || **4** h-index
+<u>ResearchGate:</u> **118.4** Research Interest Score || **45** Citations || **4** h-index
+
+<u>GoogleScholar:</u> **54** Citations || **4** h-index || **2** i10-index
 
 ***
 
+### Preprints
+
+Chrismas N.A., *et al.*, (*in review*) "Evolutionary and biological mechanisms underpinning chitin degradation in aquatic fungi"
+
 ### 2024
 
-## Publications
+[10] **Hesketh-Best P.J.**, *et al.*, Schroeder D.C. (2024) “Nationwide survey of honey bee viruses in the United States of America reveals shifts in dominant Deformed wing virus variants”. *Comms. Bio.* doi: [https://doi.org/10.1038/s42003-024-07333-9](https://doi.org/10.1038/s42003-024-07333-9)
 
-[10] **Hesketh-Best P.J.**, et al., Schroeder D.C. (2024) “Nationwide survey of honey bee viruses in the United States of America reveals shifts in dominant Deformed wing virus variants”. *Comms. Bio.* doi: https://doi.org/10.1038/s42003-024-07333-9
+[9] **Hesketh-Best P.J**, *et al.*, Schroeder D.C. (2024) “Sacbrood viruses and select Lake Sinai virus variants dominated *Apis mellifera* colonies symptomatic for European foulbrood”. *Microbiol. Spectr. ASM* doi: [https://doi.org/10.1128/spectrum.00656-24](https://doi.org/10.1128/spectrum.00656-24)
 
-#### 
+[8] Wallace B., *et al.*, **Hesketh-Best P.J.**, Silveira C.B. (2024) “Globally distributed bacteriophage genomes reveal mechanisms of tripartite phage-bacteria-coral interactions” *ISME J.* doi: [https://doi.org/10.1093/ismejo/wrae132](https://doi.org/10.1093/ismejo/wrae132)
 
-[9] **Hesketh-Best P.J**, et al., Schroeder D.C. (2024) “Sacbrood viruses and select Lake Sinai virus variants dominated *Apis mellifera* colonies symptomatic for European foulbrood”. *Microbiol. Spectr. ASM* doi: https://doi.org/10.1128/spectrum.00656-24
+[7] Stiffler A., **Hesketh-Best P.J.**, *et al.*, Silveira C.B. (2024) “Genomic and induction evidence for bacteriophage contributions to sargassum-bacteria symbioses” *BMC Microbiome* doi: [https://doi.org/10.1186/s40168-024-01860-7](https://doi.org/10.1186/s40168-024-01860-7)
 
-[8] Wallace B., et al., **Hesketh-Best P.J.**, Silveira C.B. (2024) “Globally distributed bacteriophage genomes reveal mechanisms of tripartite phage-bacteria-coral interactions” *ISME J.* doi: https://doi.org/10.1093/ismejo/wrae132
+[6] Varona N.S, **Hesketh-Best P.J.**, *et al.*, Silveira C.B. (2024) ‘Host-specific viral predation network on coral reefs’ ISME Journal doi: [https://doi.org/10.1093/ismejo/wrae240](https://doi.org/10.1093/ismejo/wrae240)
 
-[7] Stiffler A., **Hesketh-Best P.J.**, et al., Silveira C.B. (2024) “Genomic and induction evidence for bacteriophage contributions to sargassum-bacteria symbioses” *BMC Microbiome* doi: https://doi.org/10.1186/s40168-024-01860-7 
-
-[6] Varona N.S, **Hesketh-Best P.J.**, et al., Silveira C.B. (2024) ‘Host-specific viral predation network on coral reefs’ ISME Journal doi: https://doi.org/10.1093/ismejo/wrae240
-
-[5] Nikulin S.L., **Hesketh-Best P.J.**, et al., Schroeder C.D. (2024) ‘A semi-automated and high-throughput approach for the detection of honey bee viruses in bee samples’. *PLoS ONE* doi: https://doi.org/10.1371/journal.pone.0297623 
+[5] Nikulin S.L., **Hesketh-Best P.J.**, *et al.*, Schroeder C.D. (2024) ‘A semi-automated and high-throughput approach for the detection of honey bee viruses in bee samples’. *PLoS ONE* doi: [https://doi.org/10.1371/journal.pone.0297623](https://doi.org/10.1371/journal.pone.0297623)
 
 ### 2023
 
-[4] **Hesketh-Best P.J.**, et al., Silveira C.B. (2023) ‘Viruses of sulfur oxidizing phototrophs encode genes for pigment, carbon, and sulfur metabolisms’. Communications Earth & Enviroment doi: https://doi.org/10.1038/s43247-023-00796-4
+[4] **Hesketh-Best P.J.**, *et al.*, Silveira C.B. (2023) ‘Viruses of sulfur oxidizing phototrophs encode genes for pigment, carbon, and sulfur metabolisms’. Communications Earth & Enviroment doi: [https://doi.org/10.1038/s43247-023-00796-4](https://doi.org/10.1038/s43247-023-00796-4)
 
-[3] **Hesketh-Best P.J.**, et al., Upton M. (2023) ‘Whole genomes of deep-sea sponge-associated bacteria exhibit high novel natural product potential’. *FEMS Microbe* doi: https://doi.org/10.1093/femsmc/xtad005
+[3] **Hesketh-Best P.J.**, *et al.*, Upton M. (2023) ‘Whole genomes of deep-sea sponge-associated bacteria exhibit high novel natural product potential’. *FEMS Microbe* doi: [https://doi.org/10.1093/femsmc/xtad005](https://doi.org/10.1093/femsmc/xtad005)
 
 ### 2021
 
-[2] Koch M.J., **Hesketh-Best P.J.**, et al., Upton M. (2021) ‘Impact of growth media and pressure on the diversity and antimicrobial activity of isolates from two species of Hexactinellid Sponge’. *Microbiology Journal* doi: https://doi.org/10.1099/mic.0.001123
+[2] Koch M.J., **Hesketh-Best P.J.**, *et al.*, Upton M. (2021) ‘Impact of growth media and pressure on the diversity and antimicrobial activity of isolates from two species of Hexactinellid Sponge’. *Microbiology Journal* doi: [https://doi.org/10.1099/mic.0.001123](https://doi.org/10.1099/mic.0.001123)
 
-[1] **Hesketh-Best P.J.**, Mouritzen M.V., et al., Upton M. (2021) ‘*Galleria mellonella* exhibit a weight-dependent lethal median dose against Methicillin-resistant Staphylococcus aureus’. *Pathogens and Disease (FEMS)*. doi: https://doi.org/10.1093/femspd/ftab003a
+[1] **Hesketh-Best P.J.**, Mouritzen M.V., *et al.*, Upton M. (2021) ‘*Galleria mellonella* exhibit a weight-dependent lethal median dose against Methicillin-resistant Staphylococcus aureus’. *Pathogens and Disease (FEMS)*. doi: [https://doi.org/10.1093/femspd/ftab003a](https://doi.org/10.1093/femspd/ftab003a)

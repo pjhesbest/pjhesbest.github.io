@@ -4,4 +4,34 @@ title: "Projects"
 
 # Current Projects
 
+## TB-SEQ Strategy
+Population-based genomic epidemiology study for tailored strategies for surveillance and control of tuberculosis (TB-SEQ)
+
+**Role(s):** Bioinformatics developer and Data Analysis
+
+## Enterobiome
+Intestinal bacterial microbiota and invasive enterococcal disease: a prospective case-control study and evaluation of its prophylaxis by probiotic administration in animal models.
+
+**Role(s):** Bioinformatician and Data Analysis
+
+## id.Drive/COVIDDRIVE
+Brand-specific COVID-19 vaccine effectiveness against severe COVID-19 disease in Europe - A contribution of id.DRIVE, a public-private partnership to estimate brand-specific COVID-19 vaccine effectiveness in Europe (id.Drive)
+
+**Role(s):** Bioinformatician and Data Analysis
+
+## RELECOV and MN-CoV-SEQ
+Consolidation of WGS and RT-PCR activities for SARS-CoV-2 in Spain towards sustainable use and integration of enhanced infrastructure and processes in the RELECOV network (Relecs 2.0)
+
+**Role(s):** Bioinformatician and Data Analysis
+
 # Past Projects
+
+## Does Honey Bee Hygienic Behavior Curtail or Enhance Virus Transmission?
+
+**Funder**: US-Israel Binational Agricultural Research and Development Fund (BARDS)
+
+**Principle Investigators:** D. Schroeder, M. Spivak, V. Soroker
+
+**Role(s):** Sequencing experiments, Bioinformatician and Data Analysis
+
+**Outcomes:**

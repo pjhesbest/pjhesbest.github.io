@@ -15,9 +15,7 @@ website:
         text: SciComms
       - href: https://github.com/pjhesbest
         text: GitHub
-      - href: https://twitter.com/pjhesbest
-        text: Twitter
-      - href: https://bsky.app/profile/pjhesbest
+      - href: https://bsky.app/profile/pjhesbes.bsky.social
         text: BlueSky
   favicon: "logo.png"
   twitter-card: true
