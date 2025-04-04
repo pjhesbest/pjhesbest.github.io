@@ -23,8 +23,9 @@ website:
 
 format:
   html:
-    theme:
-      light: flatly
-      dark: darkly
     css: styles.css
     toc: true
+
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+- jekyll-remote-theme
