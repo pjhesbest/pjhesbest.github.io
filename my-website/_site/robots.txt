@@ -1,1 +1,1 @@
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://pjhesbest.github.io/sitemap.xml

@@ -1,0 +1,14 @@
+---
+title: "Fast food, fast fashion and fast science: How AI is revealing a broken academic structure."
+date: 2025-05-21
+type: post
+categories: [academic research, research integrity, microbiology, artificial intelligence, chat boxes]
+format:
+  html:
+    toc: true
+    code-fold: true
+    meta:
+      keywords: "academic research, research integrity, microbiology, artificial intelligence, chat boxes"
+---
+
+I recently reviewed a manuscript in which the authors has clear

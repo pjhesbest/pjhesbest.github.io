@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://example.com/publications.html</loc>
-    <lastmod>2025-03-24T07:04:02.240Z</lastmod>
+    <loc>https://pjhesbest.github.io/publications.html</loc>
+    <lastmod>2025-05-21T06:48:55.604Z</lastmod>
   </url>
   <url>
-    <loc>https://example.com/index.html</loc>
-    <lastmod>2025-04-03T13:16:10.969Z</lastmod>
+    <loc>https://pjhesbest.github.io/Blog/2025-05-21.html</loc>
+    <lastmod>2025-05-21T06:52:43.743Z</lastmod>
   </url>
   <url>
-    <loc>https://example.com/Blog.html</loc>
-    <lastmod>2025-03-24T07:15:04.942Z</lastmod>
-  </url>
-  <url>
-    <loc>https://example.com/SciComms.html</loc>
-    <lastmod>2025-03-21T10:19:26.586Z</lastmod>
-  </url>
-  <url>
-    <loc>https://example.com/projects.html</loc>
-    <lastmod>2025-03-24T07:13:53.359Z</lastmod>
-  </url>
-  <url>
-    <loc>https://example.com/CV.html</loc>
-    <lastmod>2025-04-03T13:15:45.597Z</lastmod>
+    <loc>https://pjhesbest.github.io/Blog.html</loc>
+    <lastmod>2025-05-21T06:50:08.346Z</lastmod>
   </url>
 </urlset>

@@ -1,20 +1,37 @@
 ---
 title: "Publications"
+format:
+    html:
+     meta:
+        keywords: "Microbiology, Bioinformatics, Genomics, Metagenomics, Microbiomes, Viromes"
 ---
 
-<u>ResearchGate:</u> **118.4** Research Interest Score || **45** Citations || **4** h-index
+<u>[ResearchGate](https://www.researchgate.net/profile/Poppy-Hesketh-Best):</u> **125.4** Research Interest Score || **55** Citations || **5** h-index
 
-<u>GoogleScholar:</u> **54** Citations || **4** h-index || **2** i10-index
+<u>[GoogleScholar](https://scholar.google.com/citations?user=vwuYwIMAAAAJ&hl=en):</u> **55** Citations || **5** h-index || **2** i10-index
 
 ***
 
-### Preprints
+### 2025
 
-Chrismas N.A., *et al.*, (*in review*) "Evolutionary and biological mechanisms underpinning chitin degradation in aquatic fungi"
+McKeown D., *et al*, , Schroeder D.C. (*in review*) "Virome compositions indicate that viral spillover is a dead-end between western honey bee and the common eastern bumblebee"
+
+<span class="keyword-box">Honey bees</span>
+<span class="keyword-box">Nanopore sequencing</span>
+<span class="keyword-box">RNA viromes</span>
+<span class="keyword-box">Metagenomics</span>
+<span class="keyword-box">Environmental Microbiology</span>
+
+Chrismas N.A., *et al.*, Cunliffe M. (*accepted*) "Evolutionary and biological mechanisms underpinning chitin degradation in aquatic fungi"
+
+<span class="keyword-box">Aquatic fungi</span>
+<span class="keyword-box">Chytrids</span>
+<span class="keyword-box">Environmental Microbiology</span>
+<span class="keyword-box">Marine Microbiology</span>
 
 ### 2024
 
-[10] **Hesketh-Best P.J.**, *et al.*, Schroeder D.C. (2024) “Nationwide survey of honey bee viruses in the United States of America reveals shifts in dominant Deformed wing virus variants”. *Comms. Bio.* doi: [https://doi.org/10.1038/s42003-024-07333-9](https://doi.org/10.1038/s42003-024-07333-9)
+**Hesketh-Best P.J.**, *et al.*, Schroeder D.C. (2024) “Nationwide survey of honey bee viruses in the United States of America reveals shifts in dominant Deformed wing virus variants”. *Comms. Bio.* doi: [https://doi.org/10.1038/s42003-024-07333-9](https://doi.org/10.1038/s42003-024-07333-9)
 
 <span class="keyword-box">Honey bees</span>
 <span class="keyword-box">Nanopore sequencing</span>
@@ -22,7 +39,7 @@ Chrismas N.A., *et al.*, (*in review*) "Evolutionary and biological mechanisms u
 <span class="keyword-box">Metagenomics</span>
 <span class="keyword-box">Environmental Microbiology</span>
 
-[9] **Hesketh-Best P.J**, *et al.*, Schroeder D.C. (2024) “Sacbrood viruses and select Lake Sinai virus variants dominated *Apis mellifera* colonies symptomatic for European foulbrood”. *Microbiol. Spectr. ASM* doi: [https://doi.org/10.1128/spectrum.00656-24](https://doi.org/10.1128/spectrum.00656-24)
+**Hesketh-Best P.J**, *et al.*, Schroeder D.C. (2024) “Sacbrood viruses and select Lake Sinai virus variants dominated *Apis mellifera* colonies symptomatic for European foulbrood”. *Microbiol. Spectr. ASM* doi: [https://doi.org/10.1128/spectrum.00656-24](https://doi.org/10.1128/spectrum.00656-24)
 
 <span class="keyword-box">Honey bees</span>
 <span class="keyword-box">Nanopore sequencing</span>
@@ -30,7 +47,7 @@ Chrismas N.A., *et al.*, (*in review*) "Evolutionary and biological mechanisms u
 <span class="keyword-box">Metagenomics</span>
 <span class="keyword-box">Environmental Microbiology</span>
 
-[8] Wallace B., *et al.*, **Hesketh-Best P.J.**, Silveira C.B. (2024) “Globally distributed bacteriophage genomes reveal mechanisms of tripartite phage-bacteria-coral interactions” *ISME J.* doi: [https://doi.org/10.1093/ismejo/wrae132](https://doi.org/10.1093/ismejo/wrae132)
+Wallace B., *et al.*, **Hesketh-Best P.J.**, Silveira C.B. (2024) “Globally distributed bacteriophage genomes reveal mechanisms of tripartite phage-bacteria-coral interactions” *ISME J.* doi: [https://doi.org/10.1093/ismejo/wrae132](https://doi.org/10.1093/ismejo/wrae132)
 
 <span class="keyword-box">Bacteriophages</span>
 <span class="keyword-box">Virus-Host dyanmics</span>
@@ -38,7 +55,7 @@ Chrismas N.A., *et al.*, (*in review*) "Evolutionary and biological mechanisms u
 <span class="keyword-box">Viromes</span>
 <span class="keyword-box">Marine Microbiology</span>
 
-[7] Stiffler A., **Hesketh-Best P.J.**, *et al.*, Silveira C.B. (2024) “Genomic and induction evidence for bacteriophage contributions to sargassum-bacteria symbioses” *BMC Microbiome* doi: [https://doi.org/10.1186/s40168-024-01860-7](https://doi.org/10.1186/s40168-024-01860-7)
+Stiffler A., **Hesketh-Best P.J.**, *et al.*, Silveira C.B. (2024) “Genomic and induction evidence for bacteriophage contributions to sargassum-bacteria symbioses” *BMC Microbiome* doi: [https://doi.org/10.1186/s40168-024-01860-7](https://doi.org/10.1186/s40168-024-01860-7)
 
 <span class="keyword-box">Bacteriophages</span>
 <span class="keyword-box">Virus-Host dyanmics</span>
@@ -46,7 +63,7 @@ Chrismas N.A., *et al.*, (*in review*) "Evolutionary and biological mechanisms u
 <span class="keyword-box">Viromes</span>
 <span class="keyword-box">Marine Microbiology</span>
 
-[6] Varona N.S, **Hesketh-Best P.J.**, *et al.*, Silveira C.B. (2024) ‘Host-specific viral predation network on coral reefs’ ISME Journal doi: [https://doi.org/10.1093/ismejo/wrae240](https://doi.org/10.1093/ismejo/wrae240)
+Varona N.S, **Hesketh-Best P.J.**, *et al.*, Silveira C.B. (2024) ‘Host-specific viral predation network on coral reefs’ ISME Journal doi: [https://doi.org/10.1093/ismejo/wrae240](https://doi.org/10.1093/ismejo/wrae240)
 
 <span class="keyword-box">Bacteriophages</span>
 <span class="keyword-box">Proximility-ligation sequencing</span>
@@ -55,7 +72,7 @@ Chrismas N.A., *et al.*, (*in review*) "Evolutionary and biological mechanisms u
 <span class="keyword-box">Viromes</span>
 <span class="keyword-box">Marine Microbiology</span>
 
-[5] Nikulin S.L., **Hesketh-Best P.J.**, *et al.*, Schroeder C.D. (2024) ‘A semi-automated and high-throughput approach for the detection of honey bee viruses in bee samples’. *PLoS ONE* doi: [https://doi.org/10.1371/journal.pone.0297623](https://doi.org/10.1371/journal.pone.0297623)
+Nikulin S.L., **Hesketh-Best P.J.**, *et al.*, Schroeder C.D. (2024) ‘A semi-automated and high-throughput approach for the detection of honey bee viruses in bee samples’. *PLoS ONE* doi: [https://doi.org/10.1371/journal.pone.0297623](https://doi.org/10.1371/journal.pone.0297623)
 
 <span class="keyword-box">Honey bees</span>
 <span class="keyword-box">Nanopore sequencing</span>
@@ -65,7 +82,7 @@ Chrismas N.A., *et al.*, (*in review*) "Evolutionary and biological mechanisms u
 
 ### 2023
 
-[4] **Hesketh-Best P.J.**, *et al.*, Silveira C.B. (2023) ‘Viruses of sulfur oxidizing phototrophs encode genes for pigment, carbon, and sulfur metabolisms’. Communications Earth & Enviroment doi: [https://doi.org/10.1038/s43247-023-00796-4](https://doi.org/10.1038/s43247-023-00796-4)
+**Hesketh-Best P.J.**, *et al.*, Silveira C.B. (2023) ‘Viruses of sulfur oxidizing phototrophs encode genes for pigment, carbon, and sulfur metabolisms’. Communications Earth & Enviroment doi: [https://doi.org/10.1038/s43247-023-00796-4](https://doi.org/10.1038/s43247-023-00796-4)
 
 <span class="keyword-box">Bacteriophages</span>
 <span class="keyword-box">Nanopore sequencing</span>
@@ -74,7 +91,7 @@ Chrismas N.A., *et al.*, (*in review*) "Evolutionary and biological mechanisms u
 <span class="keyword-box">Environmental Microbiology</span>
 <span class="keyword-box">Auxilllary metabolic genes</span>
 
-[3] **Hesketh-Best P.J.**, *et al.*, Upton M. (2023) ‘Whole genomes of deep-sea sponge-associated bacteria exhibit high novel natural product potential’. *FEMS Microbe* doi: [https://doi.org/10.1093/femsmc/xtad005](https://doi.org/10.1093/femsmc/xtad005)
+**Hesketh-Best P.J.**, *et al.*, Upton M. (2023) ‘Whole genomes of deep-sea sponge-associated bacteria exhibit high novel natural product potential’. *FEMS Microbe* doi: [https://doi.org/10.1093/femsmc/xtad005](https://doi.org/10.1093/femsmc/xtad005)
 
 <span class="keyword-box">Deep sea sponges</span>
 <span class="keyword-box">Whole-genome sequencing</span>
@@ -83,13 +100,13 @@ Chrismas N.A., *et al.*, (*in review*) "Evolutionary and biological mechanisms u
 
 ### 2021
 
-[2] Koch M.J., **Hesketh-Best P.J.**, *et al.*, Upton M. (2021) ‘Impact of growth media and pressure on the diversity and antimicrobial activity of isolates from two species of Hexactinellid Sponge’. *Microbiology Journal* doi: [https://doi.org/10.1099/mic.0.001123](https://doi.org/10.1099/mic.0.001123)
+Koch M.J., **Hesketh-Best P.J.**, *et al.*, Upton M. (2021) ‘Impact of growth media and pressure on the diversity and antimicrobial activity of isolates from two species of Hexactinellid Sponge’. *Microbiology Journal* doi: [https://doi.org/10.1099/mic.0.001123](https://doi.org/10.1099/mic.0.001123)
 
 <span class="keyword-box">Deep sea sponges</span>
 <span class="keyword-box">Antibiotic discovery</span>
 <span class="keyword-box">Marine Microbiology</span>
 
-[1] **Hesketh-Best P.J.**, Mouritzen M.V., *et al.*, Upton M. (2021) ‘*Galleria mellonella* exhibit a weight-dependent lethal median dose against Methicillin-resistant Staphylococcus aureus’. *Pathogens and Disease (FEMS)*. doi: [https://doi.org/10.1093/femspd/ftab003a](https://doi.org/10.1093/femspd/ftab003a)
+**Hesketh-Best P.J.**, Mouritzen M.V., *et al.*, Upton M. (2021) ‘*Galleria mellonella* exhibit a weight-dependent lethal median dose against Methicillin-resistant Staphylococcus aureus’. *Pathogens and Disease (FEMS)*. doi: [https://doi.org/10.1093/femspd/ftab003a](https://doi.org/10.1093/femspd/ftab003a)
 
 <span class="keyword-box">Galleria mellonella</span>
 <span class="keyword-box">Antibiotic testing</span>

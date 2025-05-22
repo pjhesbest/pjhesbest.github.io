@@ -1,3 +1,11 @@
 ---
 title: "Blog"
+listing:
+    contents: blog
+    type: default  # or 'grid', 'table', 'posts'
+    sort: "date desc"
+    categories: true
+    date-format: "long"
 ---
+
+Rambling thoughts and rages.

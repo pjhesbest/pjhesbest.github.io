@@ -3,6 +3,10 @@ project:
 
 website:
   title: "Poppy J Hesketh Best, Ph.D"
+  site-url: "https://pjhesbest.github.io"  # Update to your actual GitHub Pages URL
+  description: "Personal academic website for Dr. Poppy J Hesketh Best."
+  page-navigation: true
+
   navbar:
     left:
       - href: index.qmd
@@ -11,21 +15,21 @@ website:
         text: Projects
       - href: publications.qmd
         text: Publications
-#      - href: SciComms.qmd
-#        text: SciComms
-      - href: https://github.com/pjhesbest
-        text: GitHub
-      - href: https://bsky.app/profile/pjhesbes.bsky.social
-        text: BlueSky
-  favicon: "logo.png"
-  twitter-card: true
-  site-url: "https://example.com"
+      - href: Blog.qmd
+        text: Blog
+    right:
+      - icon: github
+        href: https://github.com/pjhesbest
+      - icon: journal-richtext
+        href: https://orcid.org/0000-0000-0000-0000
+      - icon: twitter
+        href: https://bsky.app/profile/pjhesbes.bsky.social
 
 format:
   html:
-    css: styles.css
-    toc: true
-
-remote_theme: pages-themes/minimal@v0.2.0
-plugins:
-- jekyll-remote-theme
+    theme: default
+    css: styles.css  # Optional, if you have custom styles
+    meta:
+      keywords: "Poppy J Hesketh Best, academic research, publications, projects, sociology, data science"
+      description: "The personal academic website of Poppy J Hesketh Best, Ph.D., showcasing research projects, publications, and blog posts."
+      author: "Poppy J Hesketh Best"
