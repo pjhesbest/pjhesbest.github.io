@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Combining `ggtree` and `geom_sf`"
+excerpt: How I lost my mind trying to recreate a figure from a paper.
+---
+
+And I am more than aware that XXXX has created a wonderful tool for the creation of phylogeographic maps, which I have even used in one publication. But this was a next step, it invovled wrapping my tree around the map and adding connective lines.
+
+Lets see how I got there using some recreated data.
+
+
