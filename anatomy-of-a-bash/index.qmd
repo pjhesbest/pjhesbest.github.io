@@ -1,5 +1,5 @@
 ---
-title: "BASHing my head with code"
+title: "Anatomy of a BASH: level up your scripts."
 image: profile.svg
 listing:
   contents: posts
