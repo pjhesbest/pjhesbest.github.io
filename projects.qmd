@@ -2,4 +2,46 @@
 title: "Projects"
 ---
 
-About this site
+## Ongoing Projects
+
+### *TB-SEQ* | Genomic epidemiology of tuberculosis contacts in Catalonia (2024–2026)
+
+Developing scalable pipelines for SNP-based outbreak analysis.  
+
+### *id.DRIVE* / id.DRIVE** | Brand-specific COVID-19 vaccine effectiveness in Europe (2024–2025)  
+
+Contribution to public-private partnership for estimating vaccine effectiveness against severe COVID-19.  
+
+### *RELECOV 2.0* | Integration of WGS and RT-PCR activities for SARS-CoV-2 surveillance in Spain (2024–2025)  
+
+Consolidating sequencing and diagnostic infrastructure for sustainable pathogen surveillance.
+
+## Previous Projects
+
+### *Honey Bee Virus Dynamics* | University of Minnesota (2022–2024)
+
+**Publications:**
+
+  - Hesketh-Best, P.J., et al. (2025) “Distinct virome compositions and lack of viral diversification indicate that viral spillover is a dead-end between the western honey bee and the common eastern bumblebee.” *Communications Biology*. [DOI](https://doi.org/10.1038/s42003-025-08415-y)  
+  - Hesketh-Best, P.J., et al. (2024) “Nationwide survey of honey bee viruses in the United States of America reveals shifts in dominant Deformed wing virus variants.” *Communications Biology*. [DOI](https://doi.org/10.1038/s42003-024-07333-9)  
+
+### *Viral Ecology of Marine Bacteriophages* | University of Miami (2022–2023)  
+
+Investigated horizontal gene exchange and viral ecology in anoxic lake environments.  
+
+**Publications:** 
+
+  - Wallace, B., et al. (2024) “Globally distributed bacteriophage genomes reveal mechanisms of tripartite phage-bacteria-coral interactions.” *ISME J.* [DOI](https://doi.org/10.1093/ismejo/wrae132)  
+  - Stiffler, A., Hesketh-Best P.J., et al. (2024) “Genomic and induction evidence for bacteriophage contributions to sargassum-bacteria symbioses.” *BMC Microbiome.* [DOI](https://doi.org/10.1186/s40168-024-01860-7)
+  - Hesketh-Best, P.J., et al. (2023) “Viruses of sulfur oxidizing phototrophs encode genes for pigment, carbon, and sulfur metabolisms.” *Communications Earth & Environment.* [DOI](https://doi.org/10.1038/s43247-023-00796-4)  
+
+### *Mining Deep-Sea Invertebrates for Novel Antibiotics* | University of Plymouth (2017–2022)  
+
+Investigated the antibiotic production potential of marine invertebrates, including deep-sea sponges and Antarctic species, using a combination of culture-based methods and (meta)genomic sequencing.  
+
+**Publications:** 
+
+  - Hesketh-Best, P.J., et al. (2023) “Whole genomes of deep-sea sponge-associated bacteria exhibit high novel natural product potential.” *FEMS Microbe.* [DOI](https://doi.org/10.1093/femsmc/xtad005)
+  - Koch, M.J., Hesketh-Best, P.J., et al. (2021) “Impact of growth media and pressure on the diversity and antimicrobial activity of isolates from two species of Hexactinellid Sponge.” *Microbiology Journal.* [DOI](https://doi.org/10.1099/mic.0.001123)
+
+

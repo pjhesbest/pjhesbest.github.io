@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blog – Poppy J Hesketh Best, Ph.D</title>
+<title>Projects – Poppy J Hesketh Best, Ph.D</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -69,65 +67,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -154,7 +94,7 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog/blog.qmd"> 
+    <a class="nav-link" href="./blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
@@ -162,7 +102,7 @@ window.Quarto = {
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link active" href="./projects.html" aria-current="page"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
@@ -181,14 +121,31 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#ongoing-projects" id="toc-ongoing-projects" class="nav-link active" data-scroll-target="#ongoing-projects">Ongoing Projects</a>
+  <ul class="collapse">
+  <li><a href="#tb-seq-genomic-epidemiology-of-tuberculosis-contacts-in-catalonia-20242026" id="toc-tb-seq-genomic-epidemiology-of-tuberculosis-contacts-in-catalonia-20242026" class="nav-link" data-scroll-target="#tb-seq-genomic-epidemiology-of-tuberculosis-contacts-in-catalonia-20242026"><em>TB-SEQ</em> | Genomic epidemiology of tuberculosis contacts in Catalonia (2024–2026)</a></li>
+  <li><a href="#id.drive-id.drive-brand-specific-covid-19-vaccine-effectiveness-in-europe-20242025" id="toc-id.drive-id.drive-brand-specific-covid-19-vaccine-effectiveness-in-europe-20242025" class="nav-link" data-scroll-target="#id.drive-id.drive-brand-specific-covid-19-vaccine-effectiveness-in-europe-20242025"><em>id.DRIVE</em> / id.DRIVE** | Brand-specific COVID-19 vaccine effectiveness in Europe (2024–2025)</a></li>
+  <li><a href="#relecov-2.0-integration-of-wgs-and-rt-pcr-activities-for-sars-cov-2-surveillance-in-spain-20242025" id="toc-relecov-2.0-integration-of-wgs-and-rt-pcr-activities-for-sars-cov-2-surveillance-in-spain-20242025" class="nav-link" data-scroll-target="#relecov-2.0-integration-of-wgs-and-rt-pcr-activities-for-sars-cov-2-surveillance-in-spain-20242025"><em>RELECOV 2.0</em> | Integration of WGS and RT-PCR activities for SARS-CoV-2 surveillance in Spain (2024–2025)</a></li>
+  </ul></li>
+  <li><a href="#previous-projects" id="toc-previous-projects" class="nav-link" data-scroll-target="#previous-projects">Previous Projects</a>
+  <ul class="collapse">
+  <li><a href="#honey-bee-virus-dynamics-university-of-minnesota-20222024" id="toc-honey-bee-virus-dynamics-university-of-minnesota-20222024" class="nav-link" data-scroll-target="#honey-bee-virus-dynamics-university-of-minnesota-20222024"><em>Honey Bee Virus Dynamics</em> | University of Minnesota (2022–2024)</a></li>
+  <li><a href="#viral-ecology-of-marine-bacteriophages-university-of-miami-20222023" id="toc-viral-ecology-of-marine-bacteriophages-university-of-miami-20222023" class="nav-link" data-scroll-target="#viral-ecology-of-marine-bacteriophages-university-of-miami-20222023"><em>Viral Ecology of Marine Bacteriophages</em> | University of Miami (2022–2023)</a></li>
+  <li><a href="#mining-deep-sea-invertebrates-for-novel-antibiotics-university-of-plymouth-20172022" id="toc-mining-deep-sea-invertebrates-for-novel-antibiotics-university-of-plymouth-20172022" class="nav-link" data-scroll-target="#mining-deep-sea-invertebrates-for-novel-antibiotics-university-of-plymouth-20172022"><em>Mining Deep-Sea Invertebrates for Novel Antibiotics</em> | University of Plymouth (2017–2022)</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
+<h1 class="title">Projects</h1>
 </div>
 
 
@@ -205,16 +162,57 @@ window.Quarto = {
 </header>
 
 
+<section id="ongoing-projects" class="level2">
+<h2 class="anchored" data-anchor-id="ongoing-projects">Ongoing Projects</h2>
+<section id="tb-seq-genomic-epidemiology-of-tuberculosis-contacts-in-catalonia-20242026" class="level3">
+<h3 class="anchored" data-anchor-id="tb-seq-genomic-epidemiology-of-tuberculosis-contacts-in-catalonia-20242026"><em>TB-SEQ</em> | Genomic epidemiology of tuberculosis contacts in Catalonia (2024–2026)</h3>
+<p>Developing scalable pipelines for SNP-based outbreak analysis.</p>
+</section>
+<section id="id.drive-id.drive-brand-specific-covid-19-vaccine-effectiveness-in-europe-20242025" class="level3">
+<h3 class="anchored" data-anchor-id="id.drive-id.drive-brand-specific-covid-19-vaccine-effectiveness-in-europe-20242025"><em>id.DRIVE</em> / id.DRIVE** | Brand-specific COVID-19 vaccine effectiveness in Europe (2024–2025)</h3>
+<p>Contribution to public-private partnership for estimating vaccine effectiveness against severe COVID-19.</p>
+</section>
+<section id="relecov-2.0-integration-of-wgs-and-rt-pcr-activities-for-sars-cov-2-surveillance-in-spain-20242025" class="level3">
+<h3 class="anchored" data-anchor-id="relecov-2.0-integration-of-wgs-and-rt-pcr-activities-for-sars-cov-2-surveillance-in-spain-20242025"><em>RELECOV 2.0</em> | Integration of WGS and RT-PCR activities for SARS-CoV-2 surveillance in Spain (2024–2025)</h3>
+<p>Consolidating sequencing and diagnostic infrastructure for sustainable pathogen surveillance.</p>
+</section>
+</section>
+<section id="previous-projects" class="level2">
+<h2 class="anchored" data-anchor-id="previous-projects">Previous Projects</h2>
+<section id="honey-bee-virus-dynamics-university-of-minnesota-20222024" class="level3">
+<h3 class="anchored" data-anchor-id="honey-bee-virus-dynamics-university-of-minnesota-20222024"><em>Honey Bee Virus Dynamics</em> | University of Minnesota (2022–2024)</h3>
+<p><strong>Publications:</strong></p>
+<ul>
+<li>Hesketh-Best, P.J., et al.&nbsp;(2025) “Distinct virome compositions and lack of viral diversification indicate that viral spillover is a dead-end between the western honey bee and the common eastern bumblebee.” <em>Communications Biology</em>. <a href="https://doi.org/10.1038/s42003-025-08415-y">DOI</a><br>
+</li>
+<li>Hesketh-Best, P.J., et al.&nbsp;(2024) “Nationwide survey of honey bee viruses in the United States of America reveals shifts in dominant Deformed wing virus variants.” <em>Communications Biology</em>. <a href="https://doi.org/10.1038/s42003-024-07333-9">DOI</a></li>
+</ul>
+</section>
+<section id="viral-ecology-of-marine-bacteriophages-university-of-miami-20222023" class="level3">
+<h3 class="anchored" data-anchor-id="viral-ecology-of-marine-bacteriophages-university-of-miami-20222023"><em>Viral Ecology of Marine Bacteriophages</em> | University of Miami (2022–2023)</h3>
+<p>Investigated horizontal gene exchange and viral ecology in anoxic lake environments.</p>
+<p><strong>Publications:</strong></p>
+<ul>
+<li>Wallace, B., et al.&nbsp;(2024) “Globally distributed bacteriophage genomes reveal mechanisms of tripartite phage-bacteria-coral interactions.” <em>ISME J.</em> <a href="https://doi.org/10.1093/ismejo/wrae132">DOI</a><br>
+</li>
+<li>Stiffler, A., Hesketh-Best P.J., et al.&nbsp;(2024) “Genomic and induction evidence for bacteriophage contributions to sargassum-bacteria symbioses.” <em>BMC Microbiome.</em> <a href="https://doi.org/10.1186/s40168-024-01860-7">DOI</a></li>
+<li>Hesketh-Best, P.J., et al.&nbsp;(2023) “Viruses of sulfur oxidizing phototrophs encode genes for pigment, carbon, and sulfur metabolisms.” <em>Communications Earth &amp; Environment.</em> <a href="https://doi.org/10.1038/s43247-023-00796-4">DOI</a></li>
+</ul>
+</section>
+<section id="mining-deep-sea-invertebrates-for-novel-antibiotics-university-of-plymouth-20172022" class="level3">
+<h3 class="anchored" data-anchor-id="mining-deep-sea-invertebrates-for-novel-antibiotics-university-of-plymouth-20172022"><em>Mining Deep-Sea Invertebrates for Novel Antibiotics</em> | University of Plymouth (2017–2022)</h3>
+<p>Investigated the antibiotic production potential of marine invertebrates, including deep-sea sponges and Antarctic species, using a combination of culture-based methods and (meta)genomic sequencing.</p>
+<p><strong>Publications:</strong></p>
+<ul>
+<li>Hesketh-Best, P.J., et al.&nbsp;(2023) “Whole genomes of deep-sea sponge-associated bacteria exhibit high novel natural product potential.” <em>FEMS Microbe.</em> <a href="https://doi.org/10.1093/femsmc/xtad005">DOI</a></li>
+<li>Koch, M.J., Hesketh-Best, P.J., et al.&nbsp;(2021) “Impact of growth media and pressure on the diversity and antimicrobial activity of isolates from two species of Hexactinellid Sponge.” <em>Microbiology Journal.</em> <a href="https://doi.org/10.1099/mic.0.001123">DOI</a></li>
+</ul>
 
 
+</section>
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

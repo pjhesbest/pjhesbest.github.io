@@ -2,4 +2,22 @@
 title: "Publications"
 ---
 
-About this site
+## 2025
+- McKeown, et al. (2025) “Distinct virome compositions and lack of viral diversification indicate that viral spillover is a dead-end between the western honey bee and the common eastern bumblebee.” *Communications Biology*. [DOI](https://doi.org/10.1038/s42003-025-08415-y)  
+- Christmas, et al. (2025) “Adaptive traits for chitin utilization in the saprotrophic aquatic chytrid fungus Rhizoclosmatium globosum.” *Proc. R. Soc. B*. [DOI](https://doi.org/10.1098/rspb.2025.033)  
+- Hesketh-Best, P.J., et al. (2024) “Nationwide survey of honey bee viruses in the United States of America reveals shifts in dominant Deformed wing virus variants.” *Communications Biology*. [DOI](https://doi.org/10.1038/s42003-024-07333-9)  
+
+## 2024
+- Hesketh-Best, P.J., et al. (2024) “Sacbrood viruses and select Lake Sinai virus variants dominated Apis mellifera colonies symptomatic for European foulbrood.” *Microbiol. Spectr.* [DOI](https://doi.org/10.1128/spectrum.00656-24)  
+- Wallace, B., et al. (2024) “Globally distributed bacteriophage genomes reveal mechanisms of tripartite phage-bacteria-coral interactions.” *ISME J.* [DOI](https://doi.org/10.1093/ismejo/wrae132)  
+- Stiffler, A., Hesketh-Best, P.J., et al. (2024) “Genomic and induction evidence for bacteriophage contributions to sargassum-bacteria symbioses.” *BMC Microbiome.* [DOI](https://doi.org/10.1186/s40168-024-01860-7)  
+- Varona, N.S., Hesketh-Best, P.J., et al. (2024) “Host-specific viral predation network on coral reefs.” *ISME Journal.* [DOI](https://doi.org/10.1093/ismejo/wrae240)  
+- Nikulin, S.L., Hesketh-Best, P.J., et al. (2024) “A semi-automated and high-throughput approach for the detection of honey bee viruses in bee samples.” *PLoS ONE.* [DOI](https://doi.org/10.1371/journal.pone.0297623)  
+
+## 2023
+- Hesketh-Best, P.J., et al. (2023) “Viruses of sulfur oxidizing phototrophs encode genes for pigment, carbon, and sulfur metabolisms.” *Communications Earth & Environment.* [DOI](https://doi.org/10.1038/s43247-023-00796-4)  
+- Hesketh-Best, P.J., et al. (2023) “Whole genomes of deep-sea sponge-associated bacteria exhibit high novel natural product potential.” *FEMS Microbe.* [DOI](https://doi.org/10.1093/femsmc/xtad005)  
+
+## 2021-2022
+- Koch, M.J., Hesketh-Best, P.J., et al. (2021) “Impact of growth media and pressure on the diversity and antimicrobial activity of isolates from two species of Hexactinellid Sponge.” *Microbiology Journal.* [DOI](https://doi.org/10.1099/mic.0.001123)  
+- Hesketh-Best, P.J., Mouritzen, M.V., et al. (2021) “Galleria mellonella exhibit a weight-dependent lethal median dose against Methicillin-resistant Staphylococcus aureus.” *Pathogens and Disease (FEMS).* [DOI](https://doi.org/10.1093/femspd/ftab003a)  
