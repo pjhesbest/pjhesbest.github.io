@@ -1,7 +1,7 @@
 ---
-title: "Part 4: Making your script pretty."
+title: "Part 4: Writing pretty scripts"
 author: "Poppy J Hesketh Best"
-date: "2025-08-28"
+date: "2025-08-26"
 categories: [code, analysis, beginners, "Anatomy of a BASH", "Guide"]
 image: "profile.png"
 execute:

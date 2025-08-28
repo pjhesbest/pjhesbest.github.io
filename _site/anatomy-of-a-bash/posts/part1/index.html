@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Poppy J Hesketh Best">
+<meta name="dcterms.date" content="2025-08-23">
 
-<title>BASHing my head with code – Poppy J Hesketh Best, Ph.D</title>
+<title>Part 1: Writing Modular Scripts – Poppy J Hesketh Best, Ph.D</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +25,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,67 +69,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -139,7 +81,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Poppy J Hesketh Best, Ph.D</span>
     </a>
   </div>
@@ -150,23 +92,23 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../publications.html"> 
+    <a class="nav-link" href="../../../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../projects.html"> 
+    <a class="nav-link" href="../../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../blog/index.html"> 
+    <a class="nav-link" href="../../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../anatomy-of-a-bash/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../../anatomy-of-a-bash/index.html"> 
 <span class="menu-text">Anatomy of a Bash</span></a>
   </li>  
 </ul>
@@ -179,270 +121,186 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">BASHing my head with code</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Part 1: Writing Modular Scripts</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">code</div>
+                <div class="quarto-category">analysis</div>
+                <div class="quarto-category">beginners</div>
+                <div class="quarto-category">Anatomy of a BASH</div>
+                <div class="quarto-category">Guide</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Poppy J Hesketh Best </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 23, 2025</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="YW5hbHlzaXM=">analysis <span class="quarto-category-count">(6)</span></div><div class="category" data-category="QW5hdG9teSUyMG9mJTIwYSUyMEJBU0g=">Anatomy of a BASH <span class="quarto-category-count">(6)</span></div><div class="category" data-category="YmVnaW5uZXJz">beginners <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Y29kZQ==">code <span class="quarto-category-count">(6)</span></div><div class="category" data-category="R3VpZGU=">Guide <span class="quarto-category-count">(6)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#writing-modular-scripts" id="toc-writing-modular-scripts" class="nav-link active" data-scroll-target="#writing-modular-scripts">Writing modular scripts</a>
+  <ul class="collapse">
+  <li><a href="#why-write-modular-scripts" id="toc-why-write-modular-scripts" class="nav-link" data-scroll-target="#why-write-modular-scripts">Why write modular scripts?</a></li>
+  <li><a href="#aims" id="toc-aims" class="nav-link" data-scroll-target="#aims">Aims:</a></li>
+  <li><a href="#definitions" id="toc-definitions" class="nav-link" data-scroll-target="#definitions">Definitions</a>
+  <ul class="collapse">
+  <li><a href="#modular-scripts" id="toc-modular-scripts" class="nav-link" data-scroll-target="#modular-scripts">Modular scripts</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Y29kZSUyQ2FuYWx5c2lzJTJDYmVnaW5uZXJzJTJDQW5hdG9teSUyMG9mJTIwYSUyMEJBU0glMkNHdWlkZQ==" data-listing-date-sort="1755900000000" data-listing-file-modified-sort="1756392740679" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1310">
-<div class="thumbnail"><a href="../anatomy-of-a-bash/posts/part1/index.html" class="no-external">
-
-<img loading="lazy" src="../anatomy-of-a-bash/posts/part1/profile.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../anatomy-of-a-bash/posts/part1/index.html" class="no-external">Part 1: Writing Modular Scripts</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">code</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YW5hbHlzaXM='); return false;">analysis</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YmVnaW5uZXJz'); return false;">beginners</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QW5hdG9teSUyMG9mJTIwYSUyMEJBU0g='); return false;">Anatomy of a BASH</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R3VpZGU='); return false;">Guide</div>
-
+<p>Why should you be writing modular scripts? How can you get started with them?</p>
+<p>⮕ <strong><a href="">Part 2</a></strong></p>
+<section id="writing-modular-scripts" class="level1">
+<h1>Writing modular scripts</h1>
+<section id="why-write-modular-scripts" class="level2">
+<h2 class="anchored" data-anchor-id="why-write-modular-scripts">Why write modular scripts?</h2>
+<p>For a long time, my bioinformatics analyses were slow and laborious. This was mostly because my scripts were built specifically for a particular sample (or set of samples). This approach likely stems from the way most bioinformatics courses and tutorials are taught—running a single sample through a process at a time, then using loops to parse multiple samples.</p>
+<p>The problem is that once the amount of data scales up, over-relying on loops to process every sample at each step can make scripts painfully slow and limiting. Paths are often hard-coded to a particular directory, variables may be specific to a single server, and so on. While this is a common way to handle genomic analysis and data processing, it quickly falls apart when you move institutes, share your scripts, or try to make your work publicly available.</p>
+<p>BASH isn’t always the best language for modular, scalable workflows (Python is a strong alternative), but if you’re comfortable with a little BASH and haven’t had time to dive into Python yet, this guide is for you. It will help you start writing multi-sample scripts that can be submitted to a server, generate data consistently, and be easily shared with colleagues—or deposited directly into project repositories for reviewers and readers to use.</p>
+</section>
+<section id="aims" class="level2">
+<h2 class="anchored" data-anchor-id="aims">Aims:</h2>
+<p>The main aim of this series of posts is to show you ways to write BASH, R and Python scripts that:</p>
+<ul>
+<li>Perform single/limited function(s) - suitable for any appropriate data-type for that function/programme (modular scripts)</li>
+<li>Using data located in any part of the computer/server</li>
+<li>Producing outputs in a default or specified location/name</li>
+<li>Has useful help messages</li>
+<li>Produces usefull error mesages</li>
+<li>Can be submited to any server type (e.g.&nbsp;SunCluter, SLURM).</li>
+</ul>
+</section>
+<section id="definitions" class="level2">
+<h2 class="anchored" data-anchor-id="definitions">Definitions</h2>
+<p>Many of these terms and phrases should already be familiar if you’ve been running commands in a terminal or submitting jobs to a high-performance computer. Some of the terms are my own descriptions — they might not be universally recognized, but they reflect how I think about them (see Table 1).</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 68%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Term</strong></th>
+<th><strong>Definition</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Functions</strong></td>
+<td>A Bash function is a block of reusable code designed to perform a particular operation. Once defined, the function can be called multiple times within a script.</td>
+</tr>
+<tr class="even">
+<td><strong>HPC</strong></td>
+<td>High performing computers</td>
+</tr>
+<tr class="odd">
+<td><strong>Loops: <code>for</code></strong></td>
+<td>A BASH <code>for</code> loop is a programming language statement which allows code to be repeatedly executed for a selection of data (i.e.&nbsp;<code>for file in read/*R1_fastq.gz; do</code> | meaning for every R1 file in the reads directory, perform the following)</td>
+</tr>
+<tr class="even">
+<td><strong>Loops: <code>until</code></strong></td>
+<td>A BASH <code>until</code> loop is executes a code block repeatedly until a specific condition becomes true.</td>
+</tr>
+<tr class="odd">
+<td><strong>Loops: <code>while</code></strong></td>
+<td>Perform an action <code>while</code> an expression is true, keep executing these lines of code.</td>
+</tr>
+<tr class="even">
+<td><strong>Modular scripts</strong></td>
+<td>Scripts that are not limited by location or data, and can be chained by a workflow manager</td>
+</tr>
+<tr class="odd">
+<td><strong>HPS: Modules</strong></td>
+<td>The <em>module system</em> is a concept available on most supercomputers, simplifying the use of different software (versions) in a precise and controlled manner.</td>
+</tr>
+<tr class="even">
+<td><strong>Pipeline</strong></td>
+<td>A pipeline is a series of processes, usually linear, which filter or transform data. The processes are generally assumed to be running concurrently. The first process takes raw data as input, does something to it, then sends its results to the second process, and so on, eventually ending with the final result being produced by the last process in the pipeline. Pipelines are normally quick, with a flow taking seconds to hours for end-to-end processing of a single set of data.</td>
+</tr>
+<tr class="odd">
+<td><strong>Statements: <code>elif</code></strong></td>
+<td>The <code>elif</code> statement, stands for “<em>else if</em>”. It can be used in conditional statements to check for multiple conditions. For example, if the first condition is false, it moves on to the next “elif” statement to check if that condition is true.</td>
+</tr>
+<tr class="even">
+<td><strong>Statements: <code>else</code></strong></td>
+<td>An <code>else</code> statement pecifies that alternate processing is to take place when the conditions of the matching IF statement are not satisfied</td>
+</tr>
+<tr class="odd">
+<td><strong>Statements: <code>if</code></strong></td>
+<td>An <code>if</code> statement is a programming construct that allows you to make decisions based on certain conditions. It helps you control the flow of your program by executing different blocks of code depending on whether a given condition is true or false.</td>
+</tr>
+<tr class="even">
+<td><strong>Variable</strong></td>
+<td>A BASH variable acts as temporary storage for a string or a number. Variables also make it easy for users to write complex functions and perform various operations. Users can create variables by giving them a name and a value. A name can be anything. (e.g.&nbsp;<code>${input}</code>)</td>
+</tr>
+<tr class="odd">
+<td><strong>Workflow</strong></td>
+<td>a set of processes, usually non-linear, often human rather than machine, which filter or transform data, often triggering external events. The processes are not assumed to be running concurrently. The data flow diagram of a pipeline can branch or loop. There may be no clearly defined “first” process – data may enter the workflow from multiple sources. Any process may take raw data as input, do something to it, then send its results to another process</td>
+</tr>
+</tbody>
+</table>
+<section id="modular-scripts" class="level3">
+<h3 class="anchored" data-anchor-id="modular-scripts">Modular scripts</h3>
+<p>Since most scripts are sent to a computing cluster, they generally need to be written as BASH scripts (some servers do accept Python, though I’ve had issues with activating Conda in the past). For simple local tasks—like using <code>seqkit</code> to check the number of reads in a FASTQ or FASTA file — I often just run commands directly. But for more complex processes, such as genome assembly and quality-checking contigs, I write scripts that I can submit to the cluster.</p>
+<p>I find it really helpful to approach script writing with modularity in mind (Figure 1). This means breaking down a workflow into individual functions or steps, figuring out the inputs and outputs at each step or for each tool, and designing it so that data from any project can be fed in, with the outputs ready for the next step.</p>
+<p>Taking this modular approach also makes it easier to combine multiple scripts into a larger pipeline using workflow managers like NextFlow or Snakemake. This allows you to automate an entire process, for example:</p>
+<p><code>raw FASTQ → adaptor trimming and QC → assembly → contig QC → annotation → phylogeny</code></p>
+<p>You don’t always need to write your own pipeline — there are plenty of tools available for bacterial and viral genomics. But if you’re working with a non-model organism, or need to use tools specifically tailored to a particular species, of there is an analysis you expect to be repeating with any regularity, building your own modular workflows can save a lot of time and make your analyses more reproducible and shareable with colleagues.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Figure1.jpg" class="img-fluid figure-img"></p>
+<figcaption><strong>Figure 1.</strong> Workflow example of a genome assembly composed of five scripts (modules, blue) that performs individual analysis and are chained by the wrapper script (green)</figcaption>
+</figure>
 </div>
-<div class="delink listing-description"><a href="../anatomy-of-a-bash/posts/part1/index.html" class="no-external">
-Why should you be writing modular scripts? How can you get started with them?
-</a></div>
+<p>I like to think of scripts as often composed of three parts, a set-up, the main, and the closing. The set up for the script will include things such as defining argument flags, parameters, opening virtual environments (if needed), help function, setting up a log output. The main body will compose of the primary purpose of the scripts, to run a specific or series of programmes, and the closing of the script will include anything got wrap it all up.</p>
+<p>This tutorial will mostly discuss the setup of a script, as that is where you can refine your script to be modular. In the example bellow you can see highlighted the what that setup might look like (Figure 2.).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Figure2.png" class="img-fluid figure-img"></p>
+<figcaption><strong>Figure 2.</strong> Example script that downloads from NCBI the assembly data for bacterial genomes and accepts a list of bacterial genome accession IDs to download either the nucleotides or proteins. Highlighted is the part of the script that will be covered in this guide.</figcaption>
+</figure>
 </div>
-<div class="metadata">
-<a href="../anatomy-of-a-bash/posts/part1/index.html" class="no-external">
-<div class="listing-date">
-Aug 23, 2025
-</div>
-<div class="listing-author">
-Poppy J Hesketh Best
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Y29kZSUyQ2FuYWx5c2lzJTJDYmVnaW5uZXJzJTJDQW5hdG9teSUyMG9mJTIwYSUyMEJBU0glMkNHdWlkZQ==" data-listing-date-sort="1755986400000" data-listing-file-modified-sort="1756392730676" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1735">
-<div class="thumbnail"><a href="../anatomy-of-a-bash/posts/part2/index.html" class="no-external">
+<p><strong><a href="">Part 2:</a></strong></p>
 
-<img loading="lazy" src="../anatomy-of-a-bash/posts/part2/profile.png" class="thumbnail-image">
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../anatomy-of-a-bash/posts/part2/index.html" class="no-external">Part 2: Starting your script with a bang</a>
-</h3>
-<div class="listing-categories">
+</section>
+</section>
+</section>
 
-<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">code</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YW5hbHlzaXM='); return false;">analysis</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YmVnaW5uZXJz'); return false;">beginners</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QW5hdG9teSUyMG9mJTIwYSUyMEJBU0g='); return false;">Anatomy of a BASH</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R3VpZGU='); return false;">Guide</div>
-
-</div>
-<div class="delink listing-description"><a href="../anatomy-of-a-bash/posts/part2/index.html" class="no-external">
-Here we cover creating help messages, defining arguments, and producing error messages.
-</a></div>
-</div>
-<div class="metadata">
-<a href="../anatomy-of-a-bash/posts/part2/index.html" class="no-external">
-<div class="listing-date">
-Aug 24, 2025
-</div>
-<div class="listing-author">
-Poppy J Hesketh Best
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Y29kZSUyQ2FuYWx5c2lzJTJDYmVnaW5uZXJzJTJDQW5hdG9teSUyMG9mJTIwYSUyMEJBU0glMkNHdWlkZQ==" data-listing-date-sort="1756072800000" data-listing-file-modified-sort="1756392725189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2170">
-<div class="thumbnail"><a href="../anatomy-of-a-bash/posts/part3/index.html" class="no-external">
-
-<img loading="lazy" src="../anatomy-of-a-bash/posts/part3/profile.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../anatomy-of-a-bash/posts/part3/index.html" class="no-external">Part 3:</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">code</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YW5hbHlzaXM='); return false;">analysis</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YmVnaW5uZXJz'); return false;">beginners</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QW5hdG9teSUyMG9mJTIwYSUyMEJBU0g='); return false;">Anatomy of a BASH</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R3VpZGU='); return false;">Guide</div>
-
-</div>
-<div class="delink listing-description"><a href="../anatomy-of-a-bash/posts/part3/index.html" class="no-external">
-Here we cover generating log files, and environment set up.
-</a></div>
-</div>
-<div class="metadata">
-<a href="../anatomy-of-a-bash/posts/part3/index.html" class="no-external">
-<div class="listing-date">
-Aug 25, 2025
-</div>
-<div class="listing-author">
-Poppy J Hesketh Best
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="Y29kZSUyQ2FuYWx5c2lzJTJDYmVnaW5uZXJzJTJDQW5hdG9teSUyMG9mJTIwYSUyMEJBU0glMkNHdWlkZQ==" data-listing-date-sort="1756159200000" data-listing-file-modified-sort="1756392718321" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="690">
-<div class="thumbnail"><a href="../anatomy-of-a-bash/posts/part4/index.html" class="no-external">
-
-<img loading="lazy" src="../anatomy-of-a-bash/posts/part4/profile.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../anatomy-of-a-bash/posts/part4/index.html" class="no-external">Part 4: Making your script pretty.</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">code</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YW5hbHlzaXM='); return false;">analysis</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YmVnaW5uZXJz'); return false;">beginners</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QW5hdG9teSUyMG9mJTIwYSUyMEJBU0g='); return false;">Anatomy of a BASH</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R3VpZGU='); return false;">Guide</div>
-
-</div>
-<div class="delink listing-description"><a href="../anatomy-of-a-bash/posts/part4/index.html" class="no-external">
-Here we cover generating log files, and environment set up.
-</a></div>
-</div>
-<div class="metadata">
-<a href="../anatomy-of-a-bash/posts/part4/index.html" class="no-external">
-<div class="listing-date">
-Aug 26, 2025
-</div>
-<div class="listing-author">
-Poppy J Hesketh Best
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="Y29kZSUyQ2FuYWx5c2lzJTJDYmVnaW5uZXJzJTJDQW5hdG9teSUyMG9mJTIwYSUyMEJBU0glMkNHdWlkZQ==" data-listing-date-sort="1756245600000" data-listing-file-modified-sort="1756392710424" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="832">
-<div class="thumbnail"><a href="../anatomy-of-a-bash/posts/part5/index.html" class="no-external">
-
-<img loading="lazy" src="../anatomy-of-a-bash/posts/part5/profile.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../anatomy-of-a-bash/posts/part5/index.html" class="no-external">Part 5: Writing smarter scripts.</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">code</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YW5hbHlzaXM='); return false;">analysis</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YmVnaW5uZXJz'); return false;">beginners</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QW5hdG9teSUyMG9mJTIwYSUyMEJBU0g='); return false;">Anatomy of a BASH</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R3VpZGU='); return false;">Guide</div>
-
-</div>
-<div class="delink listing-description"><a href="../anatomy-of-a-bash/posts/part5/index.html" class="no-external">
-Here we cover how you can make your script stop/not run if the outout file already exists, or how to force it to overwrite the outputs.
-</a></div>
-</div>
-<div class="metadata">
-<a href="../anatomy-of-a-bash/posts/part5/index.html" class="no-external">
-<div class="listing-date">
-Aug 27, 2025
-</div>
-<div class="listing-author">
-Poppy J Hesketh Best
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="Y29kZSUyQ2FuYWx5c2lzJTJDYmVnaW5uZXJzJTJDQW5hdG9teSUyMG9mJTIwYSUyMEJBU0glMkNHdWlkZQ==" data-listing-date-sort="1756332000000" data-listing-file-modified-sort="1756392476376" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="65">
-<div class="thumbnail"><a href="../anatomy-of-a-bash/posts/part6/index.html" class="no-external">
-
-<img loading="lazy" src="../anatomy-of-a-bash/posts/part6/profile.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../anatomy-of-a-bash/posts/part6/index.html" class="no-external">Part 6: Examples of modules scripts.</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">code</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YW5hbHlzaXM='); return false;">analysis</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YmVnaW5uZXJz'); return false;">beginners</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QW5hdG9teSUyMG9mJTIwYSUyMEJBU0g='); return false;">Anatomy of a BASH</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R3VpZGU='); return false;">Guide</div>
-
-</div>
-<div class="delink listing-description"><a href="../anatomy-of-a-bash/posts/part6/index.html" class="no-external">
-Here we go over some examples of scripts and how they are modules and interesting things that they do to keep your analyses working smoothly and informative.
-</a></div>
-</div>
-<div class="metadata">
-<a href="../anatomy-of-a-bash/posts/part6/index.html" class="no-external">
-<div class="listing-date">
-Aug 28, 2025
-</div>
-<div class="listing-author">
-Poppy J Hesketh Best
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

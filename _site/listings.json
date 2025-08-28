@@ -12,7 +12,12 @@
   {
     "listing": "/anatomy-of-a-bash/index.html",
     "items": [
-      "/anatomy-of-a-bash/posts/intro-to-shell/index.html"
+      "/anatomy-of-a-bash/posts/part1/index.html",
+      "/anatomy-of-a-bash/posts/part2/index.html",
+      "/anatomy-of-a-bash/posts/part3/index.html",
+      "/anatomy-of-a-bash/posts/part4/index.html",
+      "/anatomy-of-a-bash/posts/part5/index.html",
+      "/anatomy-of-a-bash/posts/part6/index.html"
     ]
   }
 ]
