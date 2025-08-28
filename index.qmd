@@ -1,0 +1,31 @@
+---
+title: "Poppy J. Hesketh-Best, Ph.D"
+about:
+  template: jolla
+  image: images/profile.jpg
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/pjhesbest
+    - icon: orcid
+      text: ORCID
+      href: https://orcid.org/0000-0002-0284-6689
+---
+
+Poppy J. Hesketh-Best, Ph.D, is a bioinformatician and computational biologist specializing in microbial genomics, modular BASH workflows, and scalable data analysis pipelines. She develops reproducible and shareable pipelines for pathogen surveillance and genomic epidemiology, with experience in SARS-CoV-2, Mycobacterium tuberculosis, HIV, and honey-bee viruses. When not coding for high-performance computing clusters, she enjoys exploring novel bioinformatics tools for genome assembly, annotation, and phylogenetic analyses.
+
+## Experience
+
+**IGTP / University Hospital Germans Trias i Pujol, Spain** | Bioinformatics Investigator | 2024 – Present  
+
+**University of Minnesota, USA** | Postdoctoral Research Associate | 2023 – 2024  
+
+**University of Miami, USA** | Postdoctoral Research Associate | 2022 – 2023  
+
+**British Antarctic Survey, UK** | Postdoctoral Research Assistant | 2021 – 2022  
+
+## Education
+
+**University of Plymouth, UK** | Ph.D. Marine Biology | 2021  
+**University of Plymouth, UK** | M.Res Marine Biology | 2017  
+**The University of Sheffield, UK** | B.Sc. Microbiology and Biochemistry | 2016  

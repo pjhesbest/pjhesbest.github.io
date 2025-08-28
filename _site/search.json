@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Poppy J. Hesketh-Best, Ph.D",
+    "section": "",
+    "text": "Poppy J. Hesketh-Best, Ph.D, is a bioinformatician and computational biologist specializing in microbial genomics, modular BASH workflows, and scalable data analysis pipelines. She develops reproducible and shareable pipelines for pathogen surveillance and genomic epidemiology, with experience in SARS-CoV-2, Mycobacterium tuberculosis, HIV, and honey-bee viruses. When not coding for high-performance computing clusters, she enjoys exploring novel bioinformatics tools for genome assembly, annotation, and phylogenetic analyses."
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Poppy J. Hesketh-Best, Ph.D",
+    "section": "Education",
+    "text": "Education\nUniversity of Plymouth, UK | Ph.D. Marine Biology | 2021\nUniversity of Plymouth, UK | M.Res Marine Biology | 2017\nThe University of Sheffield, UK | B.Sc. Microbiology and Biochemistry | 2016"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Poppy J. Hesketh-Best, Ph.D",
+    "section": "Experience",
+    "text": "Experience\nIGTP / University Hospital Germans Trias i Pujol, Spain | Bioinformatics Investigator | 2024 – Present\nUniversity of Minnesota, USA | Postdoctoral Research Associate | 2023 – 2024\nUniversity of Miami, USA | Postdoctoral Research Associate | 2022 – 2023\nBritish Antarctic Survey, UK | Postdoctoral Research Assistant | 2021 – 2022"
+  },
+  {
+    "objectID": "index.html#professional-appointments",
+    "href": "index.html#professional-appointments",
+    "title": "Poppy J. Hesketh-Best, Ph.D",
+    "section": "Professional Appointments",
+    "text": "Professional Appointments\nIGTP / University Hospital Germans Trias i Pujol | Bioinformatics Investigator | 2024 – Present\n- Lead bioinformatician in the Pathogen Diagnostics and Genomic Epidemiology (DxEpiPath) group.\n- Writing, implementing, and maintaining pipelines for genomic surveillance of viral and bacterial pathogens.\n- Conducting research on bioinformatic methods for microbial genomics.\nUniversity of Minnesota, USA | Postdoctoral Research Associate | 2023 – 2024\n- Investigated genomics of honey-bee RNA viruses and developed automated pipelines for Oxford Nanopore sequencing data.\nUniversity of Miami, USA | Postdoctoral Research Associate | 2022 – 2023\n- Studied viral ecology of phototrophic anaerobic bacteriophages and horizontal gene exchange in metagenomes.\n- Mentored PhD students and supported laboratory management.\nBritish Antarctic Survey, UK | Postdoctoral Research Assistant | 2021 – 2022\n- Sequenced Antarctic invertebrate metagenomes and benchmarked Nanopore VolTRAX2 for rapid genomic analysis."
+  },
+  {
+    "objectID": "index.html#technical-skills",
+    "href": "index.html#technical-skills",
+    "title": "Poppy J. Hesketh-Best, Ph.D",
+    "section": "Technical Skills",
+    "text": "Technical Skills\n\nComputational/Software: BASH, Nextflow, Quarto, R, Python; HPC environments (SLURM, SGE); 16S rRNA, metagenomics, RNA viral genomics, Nanopore and Illumina sequencing.\n\nMolecular Biology & Genomics: PCR, DNA/RNA extraction, library prep for Nanopore, cDNA synthesis.\n\nCell Culture & Microbiology: Culturing environmental microbes, biofilm assays, flow cytometry."
+  },
+  {
+    "objectID": "index.html#projects",
+    "href": "index.html#projects",
+    "title": "Poppy J. Hesketh-Best, Ph.D",
+    "section": "Projects",
+    "text": "Projects\n\nTB-SEQ: Genomic epidemiology strategy for tuberculosis contacts in Catalonia (2024-2026).\n\nCOVID-19 Vaccine Effectiveness: Brand-specific vaccine surveillance across Europe (2024-2025).\n\nHoney Bee Virus Dynamics: Investigating hygienic behavior and virus transmission (2022-2024)."
+  },
+  {
+    "objectID": "index.html#selected-publications",
+    "href": "index.html#selected-publications",
+    "title": "Poppy J. Hesketh-Best, Ph.D",
+    "section": "Selected Publications",
+    "text": "Selected Publications\n\nHesketh-Best, P.J., et al. (2025) “Distinct virome compositions indicate viral spillover is a dead-end between western honey bees and eastern bumblebees.” Communications Biology.\n\nHesketh-Best, P.J., et al. (2024) “Nationwide survey of honey bee viruses in the USA reveals shifts in dominant Deformed wing virus variants.” Communications Biology.\n\nHesketh-Best, P.J., et al. (2023) “Viruses of sulfur-oxidizing phototrophs encode genes for pigment, carbon, and sulfur metabolisms.” Communications Earth & Environment."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "About this site"
+  }
+]
