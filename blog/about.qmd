@@ -1,6 +1,6 @@
 ---
 title: "About"
-image: profile.jpg
+image: posts/2025-08-29_tree-with-map/mockup.png
 about:
   template: jolla
   links:
@@ -16,4 +16,4 @@ about:
 
 ---
 
-About this blog
+This blog will be an occasional exploration of data analysis and graphics—showcasing figures I’ve created that I found interesting and that might inspire others.

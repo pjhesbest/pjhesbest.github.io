@@ -1,0 +1,31 @@
+---
+title: "Part 6: Examples of modules scripts."
+author: "Poppy J Hesketh Best"
+date: "2025-08-28"
+categories: [code, analysis, beginners, "Anatomy of a BASH", "Guide"]
+image: "profile.png"
+execute:
+  echo: true
+  eval: false
+  engine: knitr
+---
+
+Here we go over some examples of scripts and how they are modules and interesting things that they do to keep your analyses working smoothly and informative.
+
+**[Part5]() ⋘ Part 6**
+
+---
+
+### Example scripts
+
+Here are some examples of scripts, you can also find these scripts in in `bin/`. Take note how these scripts make use of all that has been discussed in this guide.
+
+![Example 1.](Figure3.png)
+
+
+![Example 2.](Figure4.png)
+
+
+---
+
+**[Part5]() ⋘ Part 6**

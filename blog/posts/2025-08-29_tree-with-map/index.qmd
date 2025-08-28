@@ -1,0 +1,76 @@
+---
+title: "Phylogenetic tree with a geographic map"
+author: "Poppy J Hesketh Best"
+date: "2025-08-28"
+categories: [code, analysis, phylogeny, R, ggtree]
+image: "mockup.png"
+---
+
+# The situation
+
+In a recent meeting, I was shown an impressive figure and asked if I could attempt to recreate it. It was an amazing graphic, one that immediately struck me as having been created in Python. Unfortunately, I am far more proficient in R than in Python, especially when it comes to producing publication-quality figures. So I went about spending the next two weeks in seeing if it could be done in R.
+
+Lets take a look at our opponent, Figure 2 from the publication: ["Emergence and spread of SARS-CoV-2 lineage B.1.620 with variant of concern-like mutations and deletions"](https://pmc.ncbi.nlm.nih.gov/articles/PMC8486757/pdf/41467_2021_Article_26055.pdf). Im not really sure how copyrights work,so I am not going to include the image here, but I made a mock-up of what I want to achieve.
+
+![Tree with map projections mockup.](mockup.png){width=50%}
+
+We have a circular maximum likelihood tree with projections onto a map of Europe. The tree’s tip points are colored according to country, with lines extending from each tip to an "inner circle", from which they continue outward to the corresponding geographic coordinates. I like the use of this inner circle, it prevent the connective lines from crossing directly across the tree, retaining the structure of the branches.
+
+There are a few obvious problems that struck me as I set out on this endeavor, the first being that circular trees will have polar coordinates (originating from the tree root), and the map with have cartographic coordinates. While I have not really considered the two together before, it seems obvious that they would not mix well.
+
+The first thing I did was check to see if this publication has any code avaialble, and they did. The authors of this really neat paper detailed their analysis extremely well and can be found on their [GitHub page](https://github.com/evogytis/B.1.620-in-Europe/blob/main/scripts/B.1.620-circular-map.ipynb).
+
+It appears that following is going on in this code:
+
+1. Load SARS-CoV-2 tree and associated metadata, including sequence information, locations, travel data, and color schemes.
+2. Collapse trivial branches to simplify the tree and select a specific subtree of interest.
+3. Scale branch lengths by the genome alignment length.
+4. Sort branches geographically or by predefined country order to improve visualization.
+5. Deduplicate closely related tips from the same location to reduce tree complexity.
+6. Plot the phylogenetic tree in polar (circular) coordinates, including angle calculations, normalization of branch heights, scale bar with ticks and labels, computation of polar coordinates for nodes, curved internal branches, and tip plotting.
+7. Add branches to the plot using line collections to render the tree structure.
+8. Overlay the tree onto a geographic map using a `cartopy` projection.
+9. Highlight tips representing travelers and geographically significant locations with larger markers, outer circles, and colors reflecting country or travel status.
+10. Add a legend for selected countries and finalize the plot by removing ticks, labels, and spines, ensuring proper aspect ratio and layout.
+
+Im sure it'll be ten nice and easy steps.
+
+> 🤔 **Why not use `phytools`??** (which is accompanied by a very well maintained [blog](https://blog.phytools.org/2019/03/projecting-phylogenetic-tree-onto-map.html)). This was a viable option, but I have two minor gripes, (i) the plots are not the most aesthetically pleasing ones (very shallow, I know), and (ii) I could not seem to achieve a circular tree with map projections. So with that noted, lets get started with recreating this in R.
+
+# The Trial
+
+## Preparing test data
+
+### Phylogenetic tree
+
+Creating a test phylogenetic tree is easily achieved as such using `ggtree`, for which the resources are avaialble [here](https://yulab-smu.top/treedata-book/chapter4.html).
+
+```{r}
+# echo: true
+# eval: true
+# warning: false
+# load library
+library(ggtree)
+
+# set random seed
+set.seed(1234)
+
+# create a test tree and plot
+tree <- rtree(50)
+tree_p <- ggtree(tree) + 
+    layout_inward_circular(xlim=15)
+tree_p
+```
+
+Next lets get the tip identities from this test data:
+
+```{r}
+# echo: true
+# eval: true
+# warning: false
+# load library
+tree_data <- tree_p$data
+head(tree_data)
+
+# collect just the tips
+```

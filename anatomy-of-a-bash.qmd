@@ -1,5 +1,0 @@
----
-title: "Anatomy of a BASH"
----
-
-About this site

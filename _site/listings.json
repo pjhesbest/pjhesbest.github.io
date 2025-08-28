@@ -2,5 +2,17 @@
   {
     "listing": "/blog.html",
     "items": []
+  },
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/posts/2025-08-29_tree-with-map/index.html"
+    ]
+  },
+  {
+    "listing": "/anatomy-of-a-bash/index.html",
+    "items": [
+      "/anatomy-of-a-bash/posts/intro-to-shell/index.html"
+    ]
   }
 ]

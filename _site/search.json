@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "Poppy J. Hesketh-Best, Ph.D",
     "section": "",
-    "text": "Poppy J. Hesketh-Best, Ph.D, is a bioinformatician and computational biologist specializing in microbial genomics, modular BASH workflows, and scalable data analysis pipelines. She develops reproducible and shareable pipelines for pathogen surveillance and genomic epidemiology, with experience in SARS-CoV-2, Mycobacterium tuberculosis, HIV, and honey-bee viruses. When not coding for high-performance computing clusters, she enjoys exploring novel bioinformatics tools for genome assembly, annotation, and phylogenetic analyses."
+    "text": "I’m a bioinformatician and computational biologist specializing in microbial genomics, modular BASH workflows, and scalable data analysis pipelines. I develop reproducible and shareable pipelines for pathogen surveillance and genomic epidemiology, with experience in SARS-CoV-2, Mycobacterium tuberculosis, HIV, honey-bee viruses, and marine bacteria and viruses."
   },
   {
     "objectID": "index.html#education",
@@ -152,5 +152,89 @@
     "title": "My First Blog Post",
     "section": "",
     "text": "This is my first blog post. I can write about my latest projects, interesting results, or reflections on bioinformatics!"
+  },
+  {
+    "objectID": "blog/about.html",
+    "href": "blog/about.html",
+    "title": "About",
+    "section": "",
+    "text": "This blog will be an occasional exploration of data analysis and graphics—showcasing figures I’ve created that I found interesting and that might inspire others."
+  },
+  {
+    "objectID": "blog/posts/welcome/index.html",
+    "href": "blog/posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "blog/posts/post-with-code/index.html",
+    "href": "blog/posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "BASHing my head with code",
+    "section": "",
+    "text": "Phylogenetic tree with a geographic map\n\n\n\ncode\n\nanalysis\n\nphylogeny\n\nR\n\nggtree\n\n\n\n\n\n\n\n\n\nAug 28, 2025\n\n\nPoppy J Hesketh Best\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/posts/2025-08-29_tree-with-map/index.html",
+    "href": "blog/posts/2025-08-29_tree-with-map/index.html",
+    "title": "Phylogenetic tree with a geographic map",
+    "section": "",
+    "text": "In a recent meeting, I was shown an impressive figure and asked if I could attempt to recreate it. It was an amazing graphic, one that immediately struck me as having been created in Python. Unfortunately, I am far more proficient in R than in Python, especially when it comes to producing publication-quality figures. So I went about spending the next two weeks in seeing if it could be done in R.\nLets take a look at our opponent, Figure 2 from the publication: “Emergence and spread of SARS-CoV-2 lineage B.1.620 with variant of concern-like mutations and deletions”. Im not really sure how copyrights work,so I am not going to include the image here, but I made a mock-up of what I want to achieve.\nWe have a circular maximum likelihood tree with projections onto a map of Europe. The tree’s tip points are colored according to country, with lines extending from each tip to an “inner circle”, from which they continue outward to the corresponding geographic coordinates. I like the use of this inner circle, it prevent the connective lines from crossing directly across the tree, retaining the structure of the branches.\nThere are a few obvious problems that struck me as I set out on this endeavor, the first being that circular trees will have polar coordinates (originating from the tree root), and the map with have cartographic coordinates. While I have not really considered the two together before, it seems obvious that they would not mix well.\nThe first thing I did was check to see if this publication has any code avaialble, and they did. The authors of this really neat paper detailed their analysis extremely well and can be found on their GitHub page.\nIt appears that following is going on in this code:"
+  },
+  {
+    "objectID": "blog/posts/2025-08-29_tree-with-map/index.html#preparing-some-test-data",
+    "href": "blog/posts/2025-08-29_tree-with-map/index.html#preparing-some-test-data",
+    "title": "Phylogenetic tree with a geographic map",
+    "section": "Preparing some test data",
+    "text": "Preparing some test data\n\nPhylogenetic tree\nCreating a test phylogenetic tree is easily achieved as such using ggtree, for which the resources are avaialble here.\n\n# echo: true\n# eval: true\n# warning: false\n# load library\nlibrary(ggtree)\n\nggtree v3.16.3 Learn more at https://yulab-smu.top/contribution-tree-data/\n\nPlease cite:\n\nGuangchuang Yu, Tommy Tsan-Yuk Lam, Huachen Zhu, Yi Guan. Two methods\nfor mapping and visualizing associated data on phylogeny using ggtree.\nMolecular Biology and Evolution. 2018, 35(12):3041-3043.\ndoi:10.1093/molbev/msy194\n\n# set random seed\nset.seed(1234)\n\n# create a test tree and plot\ntree &lt;- rtree(50)\ntree_p &lt;- ggtree(tree) + \n    layout_inward_circular(xlim=15)\n\nScale for y is already present.\nAdding another scale for y, which will replace the existing scale.\n\ntree_p"
+  },
+  {
+    "objectID": "anatomy-of-a-bash/about.html",
+    "href": "anatomy-of-a-bash/about.html",
+    "title": "Anatomy of a BASH",
+    "section": "",
+    "text": "In this blog, I share a number of tips and tricks to help you write BASH scripts for microbiological data analysis."
+  },
+  {
+    "objectID": "anatomy-of-a-bash/index.html",
+    "href": "anatomy-of-a-bash/index.html",
+    "title": "BASHing my head with code",
+    "section": "",
+    "text": "Part 1: Writing Modular Scripts\n\n\n\ncode\n\nanalysis\n\nbeginners\n\nAnatomy of a BASH\n\nGuide\n\n\n\n\n\n\n\n\n\nAug 28, 2025\n\n\nPoppy J Hesketh Best\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "anatomy-of-a-bash/posts/intro-to-shell/index.html",
+    "href": "anatomy-of-a-bash/posts/intro-to-shell/index.html",
+    "title": "Part 1: Writing Modular Scripts",
+    "section": "",
+    "text": "Why should you be writing modular scripts? How can you get started with them?\n⮕ Part 2"
+  },
+  {
+    "objectID": "anatomy-of-a-bash/posts/intro-to-shell/index.html#why-write-modular-scripts",
+    "href": "anatomy-of-a-bash/posts/intro-to-shell/index.html#why-write-modular-scripts",
+    "title": "Part 1: Writing Modular Scripts",
+    "section": "Why write modular scripts?",
+    "text": "Why write modular scripts?\nFor a long time, my bioinformatics analyses were slow and laborious. This was mostly because my scripts were built specifically for a particular sample (or set of samples). This approach likely stems from the way most bioinformatics courses and tutorials are taught—running a single sample through a process at a time, then using loops to parse multiple samples.\nThe problem is that once the amount of data scales up, over-relying on loops to process every sample at each step can make scripts painfully slow and limiting. Paths are often hard-coded to a particular directory, variables may be specific to a single server, and so on. While this is a common way to handle genomic analysis and data processing, it quickly falls apart when you move institutes, share your scripts, or try to make your work publicly available.\nBASH isn’t always the best language for modular, scalable workflows (Python is a strong alternative), but if you’re comfortable with a little BASH and haven’t had time to dive into Python yet, this guide is for you. It will help you start writing multi-sample scripts that can be submitted to a server, generate data consistently, and be easily shared with colleagues—or deposited directly into project repositories for reviewers and readers to use."
+  },
+  {
+    "objectID": "anatomy-of-a-bash/posts/intro-to-shell/index.html#aims",
+    "href": "anatomy-of-a-bash/posts/intro-to-shell/index.html#aims",
+    "title": "Part 1: Writing Modular Scripts",
+    "section": "Aims:",
+    "text": "Aims:\nThe main aim of this series of posts is to show you ways to write BASH, R and Python scripts that:\n\nPerform single/limited function(s) - suitable for any appropriate data-type for that function/programme (modular scripts)\nUsing data located in any part of the computer/server\nProducing outputs in a default or specified location/name\nHas useful help messages\nProduces usefull error mesages\nCan be submited to any server type (e.g. SunCluter, SLURM)."
+  },
+  {
+    "objectID": "anatomy-of-a-bash/posts/intro-to-shell/index.html#definitions",
+    "href": "anatomy-of-a-bash/posts/intro-to-shell/index.html#definitions",
+    "title": "Part 1: Writing Modular Scripts",
+    "section": "Definitions",
+    "text": "Definitions\nMany of these terms and phrases should already be familiar if you’ve been running commands in a terminal or submitting jobs to a high-performance computer. Some of the terms are my own descriptions — they might not be universally recognized, but they reflect how I think about them (see Table 1).\n\n\n\n\n\n\n\nTerm\nDefinition\n\n\n\n\nFunctions\nA Bash function is a block of reusable code designed to perform a particular operation. Once defined, the function can be called multiple times within a script.\n\n\nHPC\nHigh performing computers\n\n\nLoops: for\nA BASH for loop is a programming language statement which allows code to be repeatedly executed for a selection of data (i.e. for file in read/*R1_fastq.gz; do | meaning for every R1 file in the reads directory, perform the following)\n\n\nLoops: until\nA BASH until loop is executes a code block repeatedly until a specific condition becomes true.\n\n\nLoops: while\nPerform an action while an expression is true, keep executing these lines of code.\n\n\nModular scripts\nScripts that are not limited by location or data, and can be chained by a workflow manager\n\n\nHPS: Modules\nThe module system is a concept available on most supercomputers, simplifying the use of different software (versions) in a precise and controlled manner.\n\n\nPipeline\nA pipeline is a series of processes, usually linear, which filter or transform data. The processes are generally assumed to be running concurrently. The first process takes raw data as input, does something to it, then sends its results to the second process, and so on, eventually ending with the final result being produced by the last process in the pipeline. Pipelines are normally quick, with a flow taking seconds to hours for end-to-end processing of a single set of data.\n\n\nStatements: elif\nThe elif statement, stands for “else if”. It can be used in conditional statements to check for multiple conditions. For example, if the first condition is false, it moves on to the next “elif” statement to check if that condition is true.\n\n\nStatements: else\nAn else statement pecifies that alternate processing is to take place when the conditions of the matching IF statement are not satisfied\n\n\nStatements: if\nAn if statement is a programming construct that allows you to make decisions based on certain conditions. It helps you control the flow of your program by executing different blocks of code depending on whether a given condition is true or false.\n\n\nVariable\nA BASH variable acts as temporary storage for a string or a number. Variables also make it easy for users to write complex functions and perform various operations. Users can create variables by giving them a name and a value. A name can be anything. (e.g. ${input})\n\n\nWorkflow\na set of processes, usually non-linear, often human rather than machine, which filter or transform data, often triggering external events. The processes are not assumed to be running concurrently. The data flow diagram of a pipeline can branch or loop. There may be no clearly defined “first” process – data may enter the workflow from multiple sources. Any process may take raw data as input, do something to it, then send its results to another process\n\n\n\n\nModular scripts\nSince most scripts are sent to a computing cluster, they generally need to be written as BASH scripts (some servers do accept Python, though I’ve had issues with activating Conda in the past). For simple local tasks—like using seqkit to check the number of reads in a FASTQ or FASTA file — I often just run commands directly. But for more complex processes, such as genome assembly and quality-checking contigs, I write scripts that I can submit to the cluster.\nI find it really helpful to approach script writing with modularity in mind (Figure 1). This means breaking down a workflow into individual functions or steps, figuring out the inputs and outputs at each step or for each tool, and designing it so that data from any project can be fed in, with the outputs ready for the next step.\nTaking this modular approach also makes it easier to combine multiple scripts into a larger pipeline using workflow managers like NextFlow or Snakemake. This allows you to automate an entire process, for example:\nraw FASTQ → adaptor trimming and QC → assembly → contig QC → annotation → phylogeny\nYou don’t always need to write your own pipeline — there are plenty of tools available for bacterial and viral genomics. But if you’re working with a non-model organism, or need to use tools specifically tailored to a particular species, of there is an analysis you expect to be repeating with any regularity, building your own modular workflows can save a lot of time and make your analyses more reproducible and shareable with colleagues.\n\n\n\nFigure 1. Workflow example of a genome assembly composed of five scripts (modules, blue) that performs individual analysis and are chained by the wrapper script (green)\n\n\nI like to think of scripts as often composed of three parts, a set-up, the main, and the closing. The set up for the script will include things such as defining argument flags, parameters, opening virtual environments (if needed), help function, setting up a log output. The main body will compose of the primary purpose of the scripts, to run a specific or series of programmes, and the closing of the script will include anything got wrap it all up.\nThis tutorial will mostly discuss the setup of a script, as that is where you can refine your script to be modular. In the example bellow you can see highlighted the what that setup might look like (Figure 2.).\n\n\n\nFigure 2. Example script that downloads from NCBI the assembly data for bacterial genomes and accepts a list of bacterial genome accession IDs to download either the nucleotides or proteins. Highlighted is the part of the script that will be covered in this guide.\n\n\nPart 2:"
   }
 ]

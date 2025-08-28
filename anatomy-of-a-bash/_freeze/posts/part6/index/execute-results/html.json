@@ -1,0 +1,15 @@
+{
+  "hash": "52bc550775e906c79f98884c9881c4a3",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Part 6: Examples of modules scripts.\"\nauthor: \"Poppy J Hesketh Best\"\ndate: \"2025-08-28\"\ncategories: [code, analysis, beginners, \"Anatomy of a BASH\", \"Guide\"]\nimage: \"profile.png\"\nexecute:\n  echo: true\n  eval: false\n  engine: knitr\n---\n\nHere we go over some examples of scripts and how they are modules and interesting things that they do to keep your analyses working smoothly and informative.\n\n**[Part5]() ⋘ Part 6\n\n---\n\n### Example scripts\n\nHere are some examples of scripts, you can also find these scripts in in `bin/`. Take note how these scripts make use of all that has been discussed in this guide.\n\n![image](Figure3.png)\n\n\n![image](Figure4.png)\n\n\n---\n\n**[Part5]() ⋘ Part 6\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

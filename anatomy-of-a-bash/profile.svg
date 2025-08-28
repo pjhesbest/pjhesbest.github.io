@@ -1,0 +1,12 @@
+<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="200" fill="#1e1e1e"></rect>
+
+  <!-- Title Text -->
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Courier New, monospace" font-size="48" fill="#f0db4f">
+    Anatomy of a BASH
+  </text>
+
+  <!-- Decorative underline -->
+  <line x1="150" y1="130" x2="650" y2="130" stroke="#f0db4f" stroke-width="4" stroke-linecap="round"></line>
+</svg>

@@ -12,7 +12,7 @@ about:
       href: https://orcid.org/0000-0002-0284-6689
 ---
 
-Poppy J. Hesketh-Best, Ph.D, is a bioinformatician and computational biologist specializing in microbial genomics, modular BASH workflows, and scalable data analysis pipelines. She develops reproducible and shareable pipelines for pathogen surveillance and genomic epidemiology, with experience in SARS-CoV-2, Mycobacterium tuberculosis, HIV, and honey-bee viruses. When not coding for high-performance computing clusters, she enjoys exploring novel bioinformatics tools for genome assembly, annotation, and phylogenetic analyses.
+I’m a bioinformatician and computational biologist specializing in microbial genomics, modular BASH workflows, and scalable data analysis pipelines. I develop reproducible and shareable pipelines for pathogen surveillance and genomic epidemiology, with experience in SARS-CoV-2, Mycobacterium tuberculosis, HIV, honey-bee viruses, and marine bacteria and viruses. 
 
 ## Experience
 

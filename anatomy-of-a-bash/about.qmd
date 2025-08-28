@@ -1,0 +1,8 @@
+---
+title: "Anatomy of a BASH"
+image: profile.png
+about:
+  template: marquee
+---
+
+In this blog, I share a number of tips and tricks to help you write BASH scripts for microbiological data analysis.

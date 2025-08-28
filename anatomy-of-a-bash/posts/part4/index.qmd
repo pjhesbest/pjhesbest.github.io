@@ -1,0 +1,121 @@
+---
+title: "Part 4: Making your script pretty."
+author: "Poppy J Hesketh Best"
+date: "2025-08-28"
+categories: [code, analysis, beginners, "Anatomy of a BASH", "Guide"]
+image: "profile.png"
+execute:
+  echo: true
+  eval: false
+  engine: knitr
+---
+
+Here we cover generating log files, and environment set up.
+
+**[Part 2]() ⋘ Part 3 ⋙ [Part 4]()**
+
+---
+
+## Making a pretty script!
+
+In the long matrix stream of text that can be printed to you terminal, it is often useful to have important text stand out. This could be a missing file, non-existent paths, location of output file...
+
+Adding color to you script can be defined very easily. First you must indicate the color of the text needs to change using: `\033[`. This open up all subsequent text to a color change, BUT no color has been defined yet. To define a color your must add the approporiate ANSI escape codes (Table 1). For red text you would define it as: `\033[31m`. All text that follows this will be green. To revert the color back to default (typically white in a console), you need to close the escape code with a `\033[m`.
+
+**Table 1.** ANSI color codes and their corresponding colors.
+
+| code | color  |
+|------|--------|
+| 31m  | red    |
+| 32m  | green  |
+| 36m  | cyan   |
+| 36m  | purple |
+| 34m  | blue   |
+| 33m  | orange |
+
+A complete example might look something like this (if you are printing text to the console using the command `echo`, then you also have to add `-e` to enable interpretation of backslash escapes):
+
+```{bash}
+echo -e "\033[31m ERROR: something has gone very wrong because the text is all red!\033[m"
+```
+
+This is quite a awkward to add and you can very easily miss a closure, and the the entirely of your console is colored red and you'll feel like you have made a terrible bloody mistake. A work around is to define the colors as a variables at the start of your script:
+
+```{bash}
+# Define colors
+green='\033[32m'; red='\033[31m'; cyan='\033[36m'; purple='\033[35m'; nocolor='\033[m'
+```
+
+This alows you to change the text color as follows:
+
+```{bash}
+echo -e "${red}ERROR: something has gone very wrong because the text is all red!${nocolor}"
+```
+
+### Adding a timestamp to the end of your script
+
+If your optimising your scripts and trying to get an idea of run-time and computing resources its useful to print out the run time. This is easily done by first creating a timestamp at the  start and the end of your script, the  calculating the elapsed time, then printing the time.
+
+```{bash}
+#!/usr/bin/env bash
+start_time=$(date +%s) # define start time
+
+#··············································#
+#··········· The rest of the script ···········#
+#··············································#
+
+finish_time=$(date +%s) # define end time
+
+# Calculate the difference in seconds
+elapsed_time=$((finish_time - start_time))
+
+# Convert elapsed time to hours, minutes, and seconds
+((sec=elapsed_time%60, elapsed_time/=60, min=elapsed_time%60, hrs=elapsed_time/60))
+timestamp=$(printf "Total time taken - %d hours, %d minutes, and %d seconds." $hrs $min $sec)
+echo $timestamp
+
+# Print the total runtime
+echo -e ""
+echo -e ""Total time taken: ${hrs}:${min}:${sec}"
+
+```
+
+If you are testing multiple computing resource allocation and different processing time, you might even consider printing a running table of your experiment along with your run parameters. For example, in the case of a a phylogeny script (`phylogeny`)
+```{bash}
+echo -e "phylogeny.sh;${THREADS};${NBOOTSTRAPS};${NUMSEQUENCES};${hrs}:${min}:${sec}" >> computing-time-test.csv
+```
+
+## `true`/`false` scenarios:
+
+Previously the idea of having a true/false argument for dissabling the error correction of SPAdes, as an example. If you have included an argument for when `QCSPADes == true` and when `QCSPADes == false`.
+
+Like before we start the if statement with a scenario, which is `QCSPADes == true` (for when the -Q flag is uses), then we direct a specific action for that scenario, which is to performs SPADes using the assembly only features disabling the error correction. 
+
+```{bash}
+
+if [[ QCSPADes == true ]]; then 
+  spades.py -1 sample-1_R1.fastq.gz -2 sample-1_R2.fastq.gz -o sample-1_assembly-out --only-assembler
+···
+```
+
+Then we can continue the if statement to include an alternative scenario using an 'else if' (elif) statement, for for scenario when `QCSPADes == false`, to perform spades with default features. This is also the default functioning of the example script as we defined `Q)QCSPADes=false;;` at the start of the script.
+
+```{bash}
+···
+elif [[ QCSPADes == false ]]; then
+  spades.py -1 sample-1_R1.fastq.gz -2 sample-1_R2.fastq.gz -o sample-1_assembly-out
+fi
+```
+The entire if argument will look as follows:
+
+```{bash}
+if [[ QCSPADes == true ]]; then 
+  spades.py -1 sample-1_R1.fastq.gz -2 sample-1_R2.fastq.gz -o sample-1_assembly-out --only-assembler
+elif [[ QCSPADes == false ]]; then
+  spades.py -1 sample-1_R1.fastq.gz -2 sample-1_R2.fastq.gz -o sample-1_assembly-out
+fi
+```
+
+---
+
+**[Part 2]() ⋘ Part 3 ⋙ [Part 4]()**
