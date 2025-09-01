@@ -1,7 +1,7 @@
 ---
 title: "Phylogenetic tree with a geographic map"
 author: "Poppy J Hesketh Best"
-date: "2025-08-28"
+date: "2025-08-29"
 categories: [code, analysis, phylogeny, R, ggtree]
 image: "mockup.png"
 ---
@@ -12,7 +12,7 @@ In a recent meeting, I was shown an impressive figure and asked if I could attem
 
 Lets take a look at our opponent, Figure 2 from the publication: ["Emergence and spread of SARS-CoV-2 lineage B.1.620 with variant of concern-like mutations and deletions"](https://pmc.ncbi.nlm.nih.gov/articles/PMC8486757/pdf/41467_2021_Article_26055.pdf). Im not really sure how copyrights work,so I am not going to include the image here, but I made a mock-up of what I want to achieve.
 
-![Tree with map projections mockup.](mockup.png){width=50%}
+![**Tree with map projections 'mockup'.** I plotted the tree, but did clip in the map and draw the lines in Inkspace to represent what I wanted to do here. This is not the final plot.](mockup.png){width=50%}
 
 We have a circular maximum likelihood tree with projections onto a map of Europe. The tree’s tip points are colored according to country, with lines extending from each tip to an "inner circle", from which they continue outward to the corresponding geographic coordinates. I like the use of this inner circle, it prevent the connective lines from crossing directly across the tree, retaining the structure of the branches.
 
@@ -39,6 +39,14 @@ Im sure it'll be ten nice and easy steps.
 
 # The Trial
 
+```{r, setup}
+# echo: false
+# eval: true
+# warning: false
+knitr::opts_knit$set(root.dir = ".")
+#setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+```
+
 ## Preparing test data
 
 ### Phylogenetic tree
@@ -51,6 +59,11 @@ Creating a test phylogenetic tree is easily achieved as such using `ggtree`, for
 # warning: false
 # load library
 library(ggtree)
+library(dplyr)
+library(ggthemes)
+library(sf)
+library(ggplot2)
+library(ape)
 
 # set random seed
 set.seed(1234)
@@ -58,19 +71,150 @@ set.seed(1234)
 # create a test tree and plot
 tree <- rtree(50)
 tree_p <- ggtree(tree) + 
-    layout_inward_circular(xlim=15)
+    layout_inward_circular(xlim=15) +
+    geom_tippoint(color = "black", size = 3)
 tree_p
 ```
 
-Next lets get the tip identities from this test data:
+Finally, in a real phylogeny, I would have meaningful data (taxonomy, host, patient, ect), so for this I can going to create some clusters. This probably would not make biological sense, but this is just purely for demonstration.
+
+```{r}
+# Pick some nodes to define clusters (here randomly picking nodes)
+nodes_to_group <- sample((Ntip(tree)+1):(Ntip(tree)+Nnode(tree)), 5)
+
+# Create ggtree plot
+tree_p <- ggtree(tree) + layout_inward_circular(xlim = 15)
+
+# Group clades
+tree_p <- groupClade(tree_p, .node = nodes_to_group)
+
+# Color tip points based on group
+tree_p <- tree_p + 
+    geom_tippoint(
+        aes(color = group), 
+        size = 3) +
+    scale_color_colorblind() +
+    theme_minimal() 
+tree_p
+```
+
+Next lets get the tip identities from this test data, and assign random locations to these tips.
 
 ```{r}
 # echo: true
 # eval: true
 # warning: false
-# load library
-tree_data <- tree_p$data
-head(tree_data)
+tree_data <- tree_p$data |> 
+    dplyr::filter(isTip)
 
-# collect just the tips
+# collect the tips
+tips <- tree_data$label
+```
+
+## The map
+
+In this example I am just going to get a shape file from the Spanish governments website [Centro de Descargas](https://centrodedescargas.cnig.es/CentroDescargas/limites-municipales-provinciales-autonomicos). You may have to dig through the internet to find the correct shape files, but I have found success in government websites. For instance, this URL will redirect you to a zipped shape file containing Europe boundaries.
+
+Thankfull, we can download and unzip the file with R:
+
+```{r, download_map}
+#| eval: false
+#| echo: true
+#| warning: false 
+# Download the shapefile. (note that I store it in a folder called DATA. You have to change that if needed.)
+download.file("https://centrodedescargas.cnig.es/CentroDescargas/limites-municipales-provinciales-autonomicos#/lineas_limite.zip", destfile = "data/lineas_limite.zip")
+
+# If the above doesnt work, go to this link and download the data manually: https://centrodedescargas.cnig.es/CentroDescargas/limites-municipales-provinciales-autonomicos#
+## the code can be deposited in the working directory
+
+# Unzip this file. You can do it with R (as below), or clicking on the object you downloaded.
+unzip("data/lineas_limite.zip", exdir = "data", junkpaths = FALSE)
+#  -- > You now have 4 files. One of these files is a .shp file! (TM_WORLD_BORDERS_SIMPL-0.3.shp)
+```
+
+I stole that little chunk of code from [R Graph Gallery](https://r-graph-gallery.com/168-load-a-shape-file-into-r.html), with a minor modification.
+
+With the shape files downloaded, we can now import and draw out first map.
+
+```{r, draw_map}
+# Import the shape file
+map_sf <- st_read("data/SHP_ETRS89/recintos_autonomicas_inspire_peninbal_etrs89/recintos_autonomicas_inspire_peninbal_etrs89.shp")
+
+# Plot simple map
+ggplot(map_sf) +
+    geom_sf(
+        fill = "#a1c4bc", 
+        color = "white"
+    ) +
+    theme_minimal()
+```
+
+Nice and easy so far. Next I create some test data for random locations.
+
+```{r}
+# Generate ~95% random uniform points across the geometry
+n_total <- 50
+
+random_points <- st_sample(map_sf, size = n_total, type = "random")
+
+# Plot the map with data points
+ggplot(map_sf) +
+    geom_sf(fill = "#a1c4bc", color = "white") +
+    geom_sf(data = random_points, color = "black", size = 4) +
+    theme_minimal()
+```
+
+Finally, I need to asign these geographic data points to the tips names. Because these are randomly shuffled, this will not be a meaningful plot, but this is just a test. In the real world, I would be importing data (tree, map and associated metadata for each tip/sample).
+
+```{r}
+# Suppose random_points is the sfc_POINT from st_sample()
+random_points_sf <- st_sf(geometry = random_points)  # now it's an sf object
+
+# Add tip names
+tip_names_shuffled <- sample(tree_data$label, size = length(random_points_sf$geometry))
+random_points_sf$label <- tip_names_shuffled
+
+# Sort both by label
+random_points_sf <- random_points_sf %>%
+    arrange(label) 
+
+tree_data_sorted <- tree_data %>%
+    arrange(label)
+
+# Add group column directly
+random_points_sf$group <- tree_data_sorted$group
+
+# Replot the map coloring the datapoints by group
+map <- ggplot(map_sf) +
+    geom_sf(fill = "#a1c4bc", color = "white") +
+    geom_sf(data = random_points_sf, 
+        aes(color = group), size = 4) +
+    theme_minimal() +
+    scale_color_colorblind() # nice colors
+map
+```
+
+## Bringing it all together (WIP)
+
+```{r}
+map + tree_p
+```
+
+### Test One
+
+So here are the map and the tree together. In the original python code from the article, the authors actually deconstructed the phylogenetic tree and replotted it in catesian space, since as you can see the plot is currently has polar coordinates. So each branch, and each node and tip coodinate needs to be recalcualted, the line drawn between the data. This is complex to acheive, and I did have a go at it.
+
+#### 
+
+
+## Final thoughts
+
+So. I would not say that is is as elegant as the tree presented in the original publication, but I enjoyed to experience of recreating this graphic and hope that this is of some use to anyone.
+
+```{r, cleanup}
+#| echo: false
+#| eval: false
+#| warning: false
+#files <- list.files("data", full.names = TRUE)
+#file.remove(files)
 ```
