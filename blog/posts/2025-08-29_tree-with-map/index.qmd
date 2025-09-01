@@ -8,9 +8,9 @@ image: "mockup.png"
 
 # The situation
 
-In a recent meeting, I was shown an impressive figure and asked if I could attempt to recreate it. It was an amazing graphic, one that immediately struck me as having been created in Python. Unfortunately, I am far more proficient in R than in Python, especially when it comes to producing publication-quality figures. So I went about spending the next two weeks in seeing if it could be done in R.
+In a recent meeting, I was shown an impressive figure and asked if I could attempt to recreate it for a project. It was an amazing graphic, one that immediately struck me as having been created in Python. Unfortunately, I am far more proficient in R than in Python, especially when it comes to producing publication-quality figures. So I went about spending the next two weeks in seeing if it could be done in R.
 
-Lets take a look at our opponent, Figure 2 from the publication: ["Emergence and spread of SARS-CoV-2 lineage B.1.620 with variant of concern-like mutations and deletions"](https://pmc.ncbi.nlm.nih.gov/articles/PMC8486757/pdf/41467_2021_Article_26055.pdf). Im not really sure how copyrights work,so I am not going to include the image here, but I made a mock-up of what I want to achieve.
+Lets take a look at our opponent, Figure 2 from the publication: [Dudas *et al.*, 2021 - "Emergence and spread of SARS-CoV-2 lineage B.1.620 with variant of concern-like mutations and deletions"](https://pmc.ncbi.nlm.nih.gov/articles/PMC8486757/pdf/41467_2021_Article_26055.pdf). Im not really sure how copyrights work,so I am not going to include the image here, but I made a mock-up of what I want to achieve.
 
 ![**Tree with map projections 'mockup'.** I plotted the tree, but did clip in the map and draw the lines in Inkspace to represent what I wanted to do here. This is not the final plot.](mockup.png){width=50%}
 
@@ -18,7 +18,7 @@ We have a circular maximum likelihood tree with projections onto a map of Europe
 
 There are a few obvious problems that struck me as I set out on this endeavor, the first being that circular trees will have polar coordinates (originating from the tree root), and the map with have cartographic coordinates. While I have not really considered the two together before, it seems obvious that they would not mix well.
 
-The first thing I did was check to see if this publication has any code avaialble, and they did. The authors of this really neat paper detailed their analysis extremely well and can be found on their [GitHub page](https://github.com/evogytis/B.1.620-in-Europe/blob/main/scripts/B.1.620-circular-map.ipynb).
+The first thing I did was check to see if this publication has any code available, and they did. The authors of this really neat paper detailed their analysis extremely well and can be found on their [GitHub page](https://github.com/evogytis/B.1.620-in-Europe/blob/main/scripts/B.1.620-circular-map.ipynb).
 
 It appears that following is going on in this code:
 
@@ -35,28 +35,31 @@ It appears that following is going on in this code:
 
 Im sure it'll be ten nice and easy steps.
 
-> 🤔 **Why not use `phytools`??** (which is accompanied by a very well maintained [blog](https://blog.phytools.org/2019/03/projecting-phylogenetic-tree-onto-map.html)). This was a viable option, but I have two minor gripes, (i) the plots are not the most aesthetically pleasing ones (very shallow, I know), and (ii) I could not seem to achieve a circular tree with map projections. So with that noted, lets get started with recreating this in R.
+> 🤔 **Why not use `phytools`??** (which is accompanied by a very well maintained [blog](https://blog.phytools.org/2019/03/projecting-phylogenetic-tree-onto-map.html)). This was a viable option, but I have two minor gripes, (i) the plots are not the most aesthetically pleasing ones (very shallow, I know), and (ii) I could not seem to achieve a circular tree with map projections.
 
 # The Trial
 
 ```{r, setup}
-# echo: false
-# eval: true
-# warning: false
+#| echo: false
+#| eval: true
+#| warning: false
 knitr::opts_knit$set(root.dir = ".")
 #setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
+suppressMessages(library(ggtree))
+suppressMessages(library(dplyr))
+suppressMessages(library(ggthemes))
+suppressMessages(library(sf))
+suppressMessages(library(ggplot2))
+suppressMessages(library(ape))
 ```
 
-## Preparing test data
-
-### Phylogenetic tree
-
-Creating a test phylogenetic tree is easily achieved as such using `ggtree`, for which the resources are avaialble [here](https://yulab-smu.top/treedata-book/chapter4.html).
+## Preparing R environment
 
 ```{r}
-# echo: true
-# eval: true
-# warning: false
+#| echo: true
+#| eval: true
+#| warning: false
 # load library
 library(ggtree)
 library(dplyr)
@@ -67,18 +70,33 @@ library(ape)
 
 # set random seed
 set.seed(1234)
+```
 
+## Preparing test data
+
+### Phylogenetic tree
+
+Creating a test phylogenetic tree is easily achieved as such using `ggtree`, for which the resources are avaialble [here](https://yulab-smu.top/treedata-book/chapter4.html).
+
+```{r}
+#| echo: true
+#| eval: true
+#| warning: false
 # create a test tree and plot
 tree <- rtree(50)
 tree_p <- ggtree(tree) + 
     layout_inward_circular(xlim=15) +
-    geom_tippoint(color = "black", size = 3)
+    geom_tippoint(color = "black", size = 3) +
+    theme_minimal()
 tree_p
 ```
 
 Finally, in a real phylogeny, I would have meaningful data (taxonomy, host, patient, ect), so for this I can going to create some clusters. This probably would not make biological sense, but this is just purely for demonstration.
 
 ```{r}
+#| eval: true
+#| echo: true
+#| warning: false 
 # Pick some nodes to define clusters (here randomly picking nodes)
 nodes_to_group <- sample((Ntip(tree)+1):(Ntip(tree)+Nnode(tree)), 5)
 
@@ -98,12 +116,12 @@ tree_p <- tree_p +
 tree_p
 ```
 
-Next lets get the tip identities from this test data, and assign random locations to these tips.
+Next lets get the tip identities from this test data, we will need this later to assign random locations (longetude, latitude coordinates) to these tips.
 
 ```{r}
-# echo: true
-# eval: true
-# warning: false
+#| echo: true
+#| eval: true
+#| warning: false
 tree_data <- tree_p$data |> 
     dplyr::filter(isTip)
 
@@ -113,7 +131,7 @@ tips <- tree_data$label
 
 ## The map
 
-In this example I am just going to get a shape file from the Spanish governments website [Centro de Descargas](https://centrodedescargas.cnig.es/CentroDescargas/limites-municipales-provinciales-autonomicos). You may have to dig through the internet to find the correct shape files, but I have found success in government websites. For instance, this URL will redirect you to a zipped shape file containing Europe boundaries.
+In this example I am just going to get a shape file from the Spanish governments website [Centro de Descargas](https://centrodedescargas.cnig.es/CentroDescargas/limites-municipales-provinciales-autonomicos). You may have to dig through the internet to find the correct shape files, but I have found success in government websites. For instance, this URL will redirect you to a zipped shape file containing Europe boundaries. The type of file you are looking for is a `.shp` file, or a shape file. These can be used to plot maps with the package `sf`. Additionally, they can be converted easily into shaped for plotting natively with `ggplot`.
 
 Thankfull, we can download and unzip the file with R:
 
@@ -121,7 +139,7 @@ Thankfull, we can download and unzip the file with R:
 #| eval: false
 #| echo: true
 #| warning: false 
-# Download the shapefile. (note that I store it in a folder called DATA. You have to change that if needed.)
+# Download the shapefile. (note that I store it in a folder called 'data/'. You have to change that if needed.)
 download.file("https://centrodedescargas.cnig.es/CentroDescargas/limites-municipales-provinciales-autonomicos#/lineas_limite.zip", destfile = "data/lineas_limite.zip")
 
 # If the above doesnt work, go to this link and download the data manually: https://centrodedescargas.cnig.es/CentroDescargas/limites-municipales-provinciales-autonomicos#
@@ -129,7 +147,6 @@ download.file("https://centrodedescargas.cnig.es/CentroDescargas/limites-municip
 
 # Unzip this file. You can do it with R (as below), or clicking on the object you downloaded.
 unzip("data/lineas_limite.zip", exdir = "data", junkpaths = FALSE)
-#  -- > You now have 4 files. One of these files is a .shp file! (TM_WORLD_BORDERS_SIMPL-0.3.shp)
 ```
 
 I stole that little chunk of code from [R Graph Gallery](https://r-graph-gallery.com/168-load-a-shape-file-into-r.html), with a minor modification.
@@ -137,6 +154,9 @@ I stole that little chunk of code from [R Graph Gallery](https://r-graph-gallery
 With the shape files downloaded, we can now import and draw out first map.
 
 ```{r, draw_map}
+#| eval: true
+#| echo: true
+#| warning: false 
 # Import the shape file
 map_sf <- st_read("data/SHP_ETRS89/recintos_autonomicas_inspire_peninbal_etrs89/recintos_autonomicas_inspire_peninbal_etrs89.shp")
 
@@ -144,17 +164,17 @@ map_sf <- st_read("data/SHP_ETRS89/recintos_autonomicas_inspire_peninbal_etrs89/
 ggplot(map_sf) +
     geom_sf(
         fill = "#a1c4bc", 
-        color = "white"
-    ) +
+        color = "white") +
     theme_minimal()
 ```
 
 Nice and easy so far. Next I create some test data for random locations.
 
 ```{r}
-# Generate ~95% random uniform points across the geometry
-n_total <- 50
-
+#| eval: true
+#| echo: true
+#| warning: false 
+n_total <- 50 # 50 datapoints, as we have 50 tips (remember rtree(50))
 random_points <- st_sample(map_sf, size = n_total, type = "random")
 
 # Plot the map with data points
@@ -167,11 +187,17 @@ ggplot(map_sf) +
 Finally, I need to asign these geographic data points to the tips names. Because these are randomly shuffled, this will not be a meaningful plot, but this is just a test. In the real world, I would be importing data (tree, map and associated metadata for each tip/sample).
 
 ```{r}
-# Suppose random_points is the sfc_POINT from st_sample()
-random_points_sf <- st_sf(geometry = random_points)  # now it's an sf object
+#| eval: true
+#| echo: true
+#| warning: false 
+# Convert the random point df into a sf object
+random_points_sf <- st_sf(geometry = random_points)
 
 # Add tip names
-tip_names_shuffled <- sample(tree_data$label, size = length(random_points_sf$geometry))
+tip_names_shuffled <- sample(
+    tree_data$label, 
+    size = length(random_points_sf$geometry))
+
 random_points_sf$label <- tip_names_shuffled
 
 # Sort both by label
@@ -196,7 +222,12 @@ map
 
 ## Bringing it all together (WIP)
 
+So I am happy with these two 'base' plots, and from here we will work on getting the two plotted in the same ggplot object.
+
 ```{r}
+#| eval: true
+#| echo: true
+#| warning: false 
 map + tree_p
 ```
 
